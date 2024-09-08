@@ -506,8 +506,8 @@ a,
     display: flex;
     flex-direction: column;
     background-color: var(--color-gray);
-    width: 17.6vw;
-    height: 18.3vw;
+    width: 18vw;
+    height: 20vw;
     clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
     border-radius: 1vw;
 }
@@ -519,7 +519,7 @@ a,
 
 .service-title {
     font-family: 'akzidenzGroteskExtra';
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     padding-left: 2vw;
     height: 3vw;
     background-color: var(--color-strong-gray);
@@ -535,31 +535,31 @@ a,
 }
 
 .service-description p {
-    width: 90%;
+    width: 85%;
     line-height: 1.5vw;
-    font-size: 1vw;
+    font-size: .9vw;
     font-weight: 400;
 }
 
 .service-container a::before {
     content: "";
     position: absolute;
-    width: 15vw;
+    width: 13.8vw;
     height: .05vw;
-    background-color: var(--color-black);
-    top: -1vw;
+    background-color: var(--color-strong-gray);
+    bottom: 1.9vw;
 }
 
 .service-container a {
     display: flex;
     gap: .3vw;
     position: absolute;
-    bottom: 1.3vw;
+    bottom: 1vw;
+    font-size: .9vw;
 }
 
 .service-description img {
-    width: 1vw;
-    height: 1.2vw;
+    height: 1vw;
 }
 
 .service-icon {
