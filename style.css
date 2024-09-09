@@ -519,11 +519,15 @@ a,
 
 .service-title {
     font-family: 'akzidenzGroteskExtra';
-    font-size: 1.45vw;
+    font-size: 1.6vw;
     padding-left: 2vw;
     height: 3vw;
     background-color: var(--color-strong-gray);
     align-content: center;
+}
+
+.service-title h4 {
+    margin: .7vw 0 1vw 0;
 }
 
 .service-description {
