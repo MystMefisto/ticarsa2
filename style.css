@@ -519,7 +519,7 @@ a,
 
 .service-title {
     font-family: 'akzidenzGroteskExtra';
-    font-size: 1.5vw;
+    font-size: 1.45vw;
     padding-left: 2vw;
     height: 3vw;
     background-color: var(--color-strong-gray);
@@ -686,8 +686,8 @@ a,
     position: absolute;
     background-color: white;
     clip-path: polygon(0 0, 100% 0, 100% 84%, 98% 100%, 0 100%);
-    width: 78.045vw;
-    height: 10.4vw;
+    width: 78vw;
+    height: 10.2vw;
     z-index: -1;
     border-radius: 0.5vw;
 }
@@ -841,7 +841,7 @@ a,
     clip-path: polygon(0 0, 100% 0, 100% 90%, 98.2% 100%, 0 100%);
     width: 78vw;
     left: 0.1vw;
-    height: 18.5vw;
+    height: 18.4vw;
     top: 0.08vw;
     z-index: -1;
     border-radius: 0.5vw;
