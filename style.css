@@ -781,6 +781,10 @@ a,
     margin-left: .4vw;
 }
 
+.coverage-button img {
+    height: 1vw;
+}
+
 .coverage-container::after {
     content: "";
     position: absolute;
