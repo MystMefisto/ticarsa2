@@ -665,6 +665,10 @@ a,
     margin-top: 2.5vw;
 }
 
+.about-text{
+    color: white;
+}
+
 .about-button img {
     width: .65vw;
 }
