@@ -637,6 +637,10 @@ a,
     top: 2.8vw;
 }
 
+.en-inner-about {
+    width: 50%;
+}
+
 .about-img-container:nth-child(2) .inner-about,
 .about-img-container:nth-child(3) .inner-about {
     top: 5vw;
@@ -741,6 +745,10 @@ a,
 .coverage-title {
     margin-bottom: -.6vw;
     color: var(--color-red);
+}
+
+.en-coverage-title{
+    font-size: 1.94vw;
 }
 
 .coverage-title::before {
