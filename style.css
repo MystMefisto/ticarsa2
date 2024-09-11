@@ -475,12 +475,13 @@ a,
 
 .services-list-title {
     margin-top: 3.8vw;
+    font-weight: 500;
     position: relative;
     color: var(--color-black);
     font-size: 1.1vw;
     padding-bottom: 1.8vw;
     margin-left: 8vw;
-    font-family: 'akzidenzGrotesk', sans-serif;
+    font-family: 'gotham', sans-serif;
 }
 
 .services-list-title::before {
@@ -505,12 +506,17 @@ a,
 
 .service-container {
     display: flex;
+    position: relative;
     flex-direction: column;
     background-color: var(--color-gray);
     width: 18vw;
-    height: 20vw;
+    height: 18.5vw;
     clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
     border-radius: 1vw;
+}
+
+.service-icon-container {
+    height: 19vw;
 }
 
 .service-container,
@@ -569,10 +575,34 @@ a,
 }
 
 .service-icon {
-    height: 3.9vw;
-    width: 14vw;
+    position: absolute;
+    height: 4vw;
     margin: auto;
     padding: 2.7vw;
+}
+
+.plat-icon {
+    height: 3.35vw;
+    padding: 3vw 1.9vw;
+}
+
+.tolva-alimento-icon {
+    height: 4.5vw;
+    padding: 2vw 3.2vw;
+}
+
+.autotanque-icon {
+    height: 4.5vw;
+    padding: 2vw 2.5vw;
+}
+
+.tolva-presurizada-icon {
+    padding: 2.5vw 1.5vw;
+}
+
+.iso-tanque-icon {
+    height: 4.5vw;
+    padding: 2vw 1.6vw;
 }
 
 .about-container {
@@ -1087,15 +1117,15 @@ button[type="submit"] img {
 }
 
 .services-text {
-    margin-top: 2vw;
+    margin-top: 1.5vw;
 }
 
 .about-text {
-    margin-top: 1.9vw;
+    margin-top: 1.5vw;
 }
 
 .clients-text {
-    margin-top: 2vw;
+    margin-top: 1.5vw;
 }
 
 .coverage-text-container {
@@ -1103,7 +1133,7 @@ button[type="submit"] img {
 }
 
 .accreditations-text {
-    margin-top: 1.8vw;
+    margin-top: 1.5vw;
 }
 
 .form-title {
@@ -1207,7 +1237,7 @@ footer .logo-img {
 
 .bolsa-list {
     color: var(--color-black);
-    padding-left: 1.4vw;
+    padding-left: 1.2vw;
 }
 
 .bolsa-list li::marker {
