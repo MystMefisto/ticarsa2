@@ -1207,6 +1207,7 @@ footer .logo-img {
 
 .bolsa-list {
     color: var(--color-black);
+    padding-left: 1.4vw;
 }
 
 .bolsa-list li::marker {
