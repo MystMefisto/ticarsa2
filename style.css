@@ -3150,14 +3150,14 @@ footer .logo-img {
  */
 #menu
 {
-  position: absolute;
-  width: 83.8vw;
-  margin: 0;
-  margin-top: 3vw;
-  left: -82.6vw;
-  padding: 6.7vw;
-  text-align: center;
-  padding-top: 5vw;
+    position: absolute;
+    width: 89vw;
+    margin: 0;
+    margin-top: -.7vw;
+    left: -88vw;
+    padding: 6.7vw 9.7vw 6.7vw 9.7vw;
+    text-align: center;
+    padding-top: 5vw;
   background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
