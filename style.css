@@ -255,7 +255,7 @@ body {
         height: 9vw !important;
         margin: 0 !important;
         padding-bottom: 2.7vw !important;
-        margin-left: 7vw !important;
+        margin-left: 4vw !important;
         margin-top: 3vw !important;
     }
 
@@ -375,9 +375,6 @@ body {
 
     .service-description img {
         height: 2.3vw !important;
-    }
-
-    .service-description {
     }
 
     .about-header {
@@ -509,9 +506,6 @@ body {
 
     .coverage-container::after {
         top: 12.4vw !important;
-    }
-
-    .coverage-text-container {
     }
 
     .coverage-title {
@@ -660,6 +654,10 @@ body {
 
     .inner-contact-container {
         flex-direction: column !important;
+    }
+
+    .contact-container{
+        padding-left: 2vw !important;
     }
 
     .form-text {
