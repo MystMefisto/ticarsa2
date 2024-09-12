@@ -660,6 +660,10 @@ body {
         padding-left: 2vw !important;
     }
 
+    .form-title{
+        text-align: center !important;
+    }
+
     .form-text {
         width: 80vw !important;
         text-align: center !important;
