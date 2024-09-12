@@ -250,6 +250,7 @@ body {
     .nav-bar .logo-img {
         padding-left: 8vw !important;
         height: 10vw !important;
+        padding-bottom: 3vw !important;
 }
 
     .nav-bar nav {
