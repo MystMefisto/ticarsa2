@@ -247,6 +247,11 @@ body {
         width: 100% !important;
     }
 
+    .nav-bar .logo-img {
+        padding-left: 8vw !important;
+        height: 10vw !important;
+}
+
     .nav-bar nav {
         display: block !important;
     }
