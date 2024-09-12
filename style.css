@@ -247,10 +247,16 @@ body {
         width: 100% !important;
     }
 
-    img.logo-img {
-        height: 10vw !important;
+    .nav-bar nav {
+        display: block !important;
+    }
+
+    .logo-img {
+        height: 9vw !important;
         margin: 0 !important;
-        padding-bottom: 5.7vw !important;
+        padding-bottom: 2.7vw !important;
+        margin-left: 7vw !important;
+        margin-top: 3vw !important;
     }
 
     .presentation-menu-container {
@@ -264,13 +270,14 @@ body {
     .presentation-title {
         top: auto !important;
         left: auto !important;
-        margin-left: 5vw !important;
+        margin-left: 11vw !important;
     }
 
     .presentation-text {
         font-size: 2vw !important;
         margin-top: 0 !important;
         line-height: 2.8vw !important;
+        left: 11vw !important;
     }
 
     .presentation-button {
@@ -306,13 +313,14 @@ body {
     }
 
     .services-list-title::before {
-        top: 4vw !important;
-        width: 80vw !important;
+        top: 3.45vw !important;
+        width: 73vw !important;
         left: 0 !important;
     }
 
     .services-list-title::after {
-        top: 3.7vw !important;
+        top: 3.3vw !important;
+        height: .8vw !important;
     }
 
     .service-description p:nth-of-type(1) {
@@ -321,6 +329,7 @@ body {
 
     .list-container {
         flex-wrap: wrap !important;
+        justify-content: space-between !important;
     }
 
     .service-container {
@@ -388,6 +397,10 @@ body {
         position: relative !important;
         left: 0 !important;
         top: 1vw !important;
+    }
+
+    .en-inner-about {
+        width: 70% !important;
     }
 
     .about-img-container {
@@ -507,6 +520,10 @@ body {
         font-size: 5vw !important;
     }
 
+    .en-coverage-title {
+        font-size: 4.2vw !important;
+    }
+
     .coverage-text {
         position: absolute !important;
         top: 29vw !important;
@@ -525,6 +542,14 @@ body {
         height: 4vw !important;
         width: 16.2vw !important;
         margin-top: 1.3vw !important;
+    }
+
+    .ubication-list {
+        padding-left: 4.5vw !important
+    }
+
+    .ubication-list li::marker{
+        font-size: 2.2vw !important;
     }
 
     .coverage-button img {
@@ -601,7 +626,8 @@ body {
         height: 7vw !important;
         line-height: 3vw !important;
         font-size: 2.3vw !important;
-        margin-bottom: 8vw !important;
+        margin-bottom: 10vw !important;
+        width: 90% !important;
     }
 
     .social-responsability-title {
@@ -616,8 +642,16 @@ body {
         font-size: 2vw !important;
     }
 
+    .social-responsability-body{
+        gap: 7vw !important;
+    }
+
     .social-responsability-body img {
         width: 80vw !important;
+    }
+
+    .social-responsability-body img:nth-of-type(n+3) {
+        display: none !important;
     }
 
     form {
@@ -650,6 +684,7 @@ body {
     .lema-img {
         height: 22vw !important;
         width: 18vw !important;
+        padding: 3vw 0 0 0 !important;
     }
 
     .inner-direct-contact-container h3 {
@@ -666,6 +701,7 @@ body {
         text-align: center !important;
         align-items: center !important;
         gap: 2.5vw !important;
+        padding-bottom: 4vw !important;
     }
 
     .icons-img:nth-child(5) {
@@ -681,12 +717,14 @@ body {
 
     .rss-container img {
         width: auto !important;
-        height: 3.6vw !important;
+        height: 5vw !important;
     }
 
     .rss-container {
+        width: 18vw !important;
         gap: 4vw !important;
-        margin-right: 0 !important;
+        margin-right: 23vw !important;
+        padding: 3vw 0 !important;
     }
 
     .footer-nav {
@@ -1070,8 +1108,17 @@ body {
     align-items: center !important;
 }
 
+.line-decorator::after{
+    height: .8vw !important;
+    bottom: -0.12vw !important;
+    width: 12vw !important;
+}
+
 .line-decoration-experience::after {
     right: 5vw !important;
+    height: .8vw !important;
+    bottom: -3.2vw !important;
+    width: 12vw !important;
 }
 
 .inner-operator-column:nth-of-type(1) h3::before {
@@ -1129,7 +1176,7 @@ body {
 }
 
 .profesional-icons p {
-    width: 25% !important;
+    width: 28% !important;
 }
 
 .profesional-icons p::before {
@@ -1335,6 +1382,10 @@ a,
     margin: auto;
     width: 85.2%;
     padding: 2.4vw 0;
+}
+
+.nav-bar nav {
+    display: none;
 }
 
 .logo-img {
@@ -1821,7 +1872,7 @@ a,
     color: var(--color-strong-gray);
     gap: 3vw;
     line-height: 1.7vw;
-    margin-left: 0.3vw;
+    margin-left: -1.4vw;
 }
 
 .ubication-list{
@@ -2057,7 +2108,7 @@ form {
     color: white;
 }
 
-input {
+form input {
     height: 2.1vw;
     font-size: .9vw;
     padding-left: 1.1vw;
@@ -2990,4 +3041,166 @@ footer .logo-img {
     right: 10vw;
     height: .7vw;
     bottom: 0;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 6vw;
+  right: 7vw;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: var(--color-red);
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 83.8vw;
+  margin: 0;
+  margin-top: 6vw;
+  left: -85vw;
+  padding: 6.7vw;
+  text-align: center;
+  padding-top: 5vw;
+  background: white;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: scaleY(0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform:scaleY(1);
+}
+
+.nav-bar nav {
+    /* display: block; */
+}
+
+#menu .language-container img {
+    width: 10vw !important;
+}
+
+#menu .language-container a {
+    display: flex;
+    justify-content: center;
+}
+
+#menu .language-container {
+    display: flex;
+    width: 100%;
+    margin-top: 1vw;
+    gap: 4vw;
+    margin-right: 0;
+    justify-content: center;
 }
