@@ -1260,6 +1260,16 @@ body {
         display: none !important;
     }
 
+    .slider{
+        height: 26.65vw !important;
+        clip-path: polygon(0 0, 100% 0, 100% 84%, 92% 100%, 0 100%) !important;
+    }
+
+    .slider::before{
+        height: 26.3vw !important;
+        clip-path: polygon(0 0, 100% 0, 100% 84%, 92% 100%, 0 100%) !important;
+    }
+
     .slider .slider-list .slider-item img {
         width: 20vw !important;
         height: 100%;
@@ -3191,10 +3201,25 @@ footer .logo-img {
 .slider {
     position: relative;
     width: 80vw;
-    background-color: white;
+    background-color: var(--color-gray);
     overflow: hidden;
     margin-bottom: 12vw;
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 98% 100%, 0 100%);
+    height: 10.65vw;
   }
+
+  .slider::before {
+    content: "";
+    left: 0.2vw;
+    top: 0.2vw;
+    position: absolute;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 98% 100%, 0 100%);
+    width: 79.6vw;
+    height: 10.3vw;
+    z-index: -1;
+}
+
   .slider .action-button {
     position: absolute;
     top: 50%;
