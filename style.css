@@ -1260,6 +1260,11 @@ body {
         display: none !important;
     }
 
+    .slider .slider-list .slider-item img {
+        width: 20vw !important;
+        height: 100%;
+      }
+
 }
 
 a,
@@ -3088,20 +3093,12 @@ footer .logo-img {
     position: absolute;
     top: -7px;
     left: -5px;
-
     cursor: pointer;
-
     opacity: 0;
-    /* hide this */
     z-index: 2;
-    /* and place it over the hamburger */
-
     -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
 #menuToggle span {
     display: block;
     width: 8vw;
@@ -3129,35 +3126,21 @@ footer .logo-img {
     transform-origin: 0% 100%;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
 #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-0.5vw, 0.3vw);
     background: #232323;
 }
 
-/*
- * But let's hide the middle one.
- */
 #menuToggle input:checked~span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
 #menuToggle input:checked~span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1vw);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu {
     position: absolute;
     width: 89vw;
@@ -3182,15 +3165,8 @@ footer .logo-img {
     font-size: 5vw;
 }
 
-/*
- * And let's slide it in from the left
- */
 #menuToggle input:checked~ul {
     transform: scaleY(1);
-}
-
-.nav-bar nav {
-    /* display: block; */
 }
 
 #menu .language-container img {
@@ -3210,3 +3186,91 @@ footer .logo-img {
     margin-right: 0;
     justify-content: center;
 }
+
+
+.slider {
+    position: relative;
+    width: 80vw;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 12vw;
+  }
+  .slider .action-button {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    aspect-ratio: 1;
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 100;
+    transition: color 0.2s linear, background 0.2s linear, transform 0.2s linear;
+  }
+  .slider .action-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    cursor: pointer;
+  }
+  .slider .action-button.left-chevron {
+    left: 0;
+    transform: translate(5%, -50%);
+  }
+  .slider .action-button.left-chevron:hover {
+    transform: translate(15%, -50%);
+  }
+  .slider .action-button.right-chevron {
+    right: 0;
+    transform: translate(-5%, -50%);
+  }
+  .slider .action-button.right-chevron:hover {
+    transform: translate(-15%, -50%);
+  }
+  .slider .slider-list {
+    display: grid;
+    grid-auto-columns: 30%;
+    grid-auto-flow: column;
+    margin: 0;
+    align-items: center;
+    padding: 1rem 0;
+    list-style: none;
+    transition: transform 5s linear;
+    gap: 1rem;
+  }
+  @media (min-width: 576px) {
+    .slider .slider-list {
+      grid-auto-columns: 50%;
+    }
+  }
+  @media (min-width: 768px) {
+    .slider .slider-list {
+      grid-auto-columns: 33.33333333%;
+    }
+  }
+  @media (min-width: 992px) {
+    .slider .slider-list {
+      grid-auto-columns: 25%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .slider .slider-list {
+      grid-auto-columns: 20%;
+    }
+  }
+  .slider .slider-list .slider-item {
+    display: inline-block;
+    color: white;
+    text-align: center;
+  }
+  .slider .slider-list .slider-item img {
+    width: 8vw;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.1s linear;
+  }
+  .slider .slider-list .slider-item img:hover {
+    transform: scale(1.1);
+  }
