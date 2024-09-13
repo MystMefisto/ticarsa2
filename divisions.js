@@ -108,28 +108,8 @@ const timeCoverter = {
       }
     }
   }
-  
-  const sliderClients = new Slider('.clients-container .slider', {
-    autoplay: true,
-    reverse: false
-  });
 
-  const sliderCreds = new Slider('.accreditations-container .slider', {
-    autoplay: true,
-    reverse: false
-  });
-
-  const slider = new Slider('.slider', {
-    autoplay: true,
-    reverse: false
-  });
-
-  const sliderContainer = new Slider('.slider-container .slider', {
-    autoplay: true,
-    reverse: false
-  });
-
-  const sliderLogo = new Slider('.accreditations-logo div', {
+  const sliderCreds = new Slider('.accreditations-container.slider-container .slider', {
     autoplay: true,
     reverse: false
   });

@@ -3197,6 +3197,10 @@ footer .logo-img {
     justify-content: center;
 }
 
+.clients-container .slider {
+    margin: auto;
+}
+
 
 .slider {
     position: relative;
@@ -3299,3 +3303,7 @@ footer .logo-img {
   .slider .slider-list .slider-item img:hover {
     transform: scale(1.1);
   }
+
+  .accreditations-container.slider-container .slider {
+    margin-bottom: 5vw;
+}
