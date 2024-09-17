@@ -3331,41 +3331,41 @@ footer .logo-img {
 
 .about-button:hover, .presentation-button:hover, .coverage-button:hover, .division-button:hover, .bolsa-container:nth-of-type(n+2) .bolsa-description .bolsa-button.bolsa-button-mobile:hover {
     background-color: var(--color-yellow);
-    transition: background-color 0.5s ease;
+    transition: background-color 0.25s ease;
 }
 
 .about-button:hover img, .presentation-button:hover img, .coverage-button:hover img,.division-button:hover img, .bolsa-container:nth-of-type(n+2) .bolsa-description .bolsa-button.bolsa-button-mobile:hover img {
     filter: hue-rotate(-45deg) saturate(572%) brightness(110%);
-    transition: filter 0.5s ease;
+    transition: filter 0.25s ease;
 }
 
 .presentation-menu-button:hover {
     color: var(--color-yellow);
-    transition: background-color 0.5s ease;
+    transition: color 0.25s ease;
 }
 
 .nav-bar .menu-container:nth-of-type(1) a:hover {
     color: var(--color-red);
-    transition: color 0.5s ease;
+    transition: color 0.25s ease;
 }
 
 .bolsa-container .bolsa-button:hover {
     background-color: var(--color-red);
-    transition: background-color 0.5s ease;
+    transition: background-color 0.25s ease;
 }
 
 .bolsa-container .bolsa-button:hover img,button[type="submit"]:hover img {
     filter: hue-rotate(45deg) saturate(72%) brightness(330%);
-    transition: filter 0.5s ease;
+    transition: filter 0.25s ease;
 }
 
 button[type="submit"]:hover {
     background-color: var(--color-red);
     border: rgb(1, 1, 1, .2) solid .5px;
-    transition: background-color 0.5s ease,border 0.5s ease;
+    transition: background-color 0.25s ease,border 0.25s ease;
 }
 
 .header-container .rss-container a:hover img {
     filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(-40deg) brightness(90%);
-    transition: filter 0.5s ease;
+    transition: filter 0.25s ease;
 }
