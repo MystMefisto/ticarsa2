@@ -1817,7 +1817,7 @@ a,
     gap: 1vw 5vw;
     margin: 1.5vw 10.3vw;
     background-color: var(--color-gray);
-    clip-path: polygon(0 0, 100% 0, 100% 84%, 98% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 98% 100%, 0 100%);
     border-radius: 0.5vw;
 }
 
@@ -1825,7 +1825,7 @@ a,
     content: "";
     position: absolute;
     background-color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 84%, 98% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 98% 100%, 0 100%);
     width: 78vw;
     height: 29.6vw;
     z-index: -1;
