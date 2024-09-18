@@ -1812,7 +1812,9 @@ a,
     gap: 1vw;
     justify-content: space-evenly;
     width: 78.3vw;
-    height: 10.5vw;
+    height: 30vw;
+    flex-wrap: wrap;
+    gap: 1vw 5vw;
     margin: 1.5vw 10.3vw;
     background-color: var(--color-gray);
     clip-path: polygon(0 0, 100% 0, 100% 84%, 98% 100%, 0 100%);
@@ -1825,7 +1827,7 @@ a,
     background-color: white;
     clip-path: polygon(0 0, 100% 0, 100% 84%, 98% 100%, 0 100%);
     width: 78vw;
-    height: 10.2vw;
+    height: 29.6vw;
     z-index: -1;
     border-radius: 0.5vw;
 }
