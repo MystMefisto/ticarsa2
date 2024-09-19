@@ -1,25 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const observerAnimUp = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('animateanimated', 'animatefadeInUp');
-              observerAnimUp.unobserve(entry.target);
-          }
-      });
-  }, { threshold: 0, rootMargin: '0px 0px -20% 0px' });
+    // Inicializamos el controlador de ScrollMagic
+    const controller = new ScrollMagic.Controller();
 
-  const elementsToAnimateUp = document.querySelectorAll('.animup');
-  elementsToAnimateUp.forEach(element => observerAnimUp.observe(element));
+    // Seleccionamos todos los elementos que queremos animar
+    const animUpElements = document.querySelectorAll('.animup');
 
-  const observerAnimRight = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('animateanimated', 'animatefadeInRight');
-              observerAnimRight.unobserve(entry.target);
-          }
-      });
-  }, { threshold: 0, rootMargin: '0px 0px -20% 0px' });
-
-  const elementsToAnimateRight = document.querySelectorAll('.animright');
-  elementsToAnimateRight.forEach(element => observerAnimRight.observe(element));
+    // Para cada elemento, creamos una escena de ScrollMagic
+    animUpElements.forEach(element => {
+        new ScrollMagic.Scene({
+            triggerElement: element,  // El elemento que activará la animación
+            triggerHook: 0.9,         // Cuándo debería activarse la animación (0 = parte superior, 1 = parte inferior del viewport)
+            offset: 0                 // Si necesitas ajustar el punto de disparo
+        })
+        .on("enter", function () {
+            // Añadir clases de animación al entrar en el viewport
+            element.classList.add('animate__animated', 'animate__fadeInUp');
+        })
+        .addTo(controller);  // Añadir la escena al controlador de ScrollMagic
+    });
 });
