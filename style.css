@@ -3380,10 +3380,10 @@ button[type="submit"]:hover {
 
 .initial-opacity-transition {
     opacity: 0% !important;
-    transition: opacity 0.1s linear;
+    transition: opacity 0.2s linear;
 }
 
 .final-opacity-transition {
     opacity: 100% !important;
-    transition: opacity 0.1s linear;
+    transition: opacity 0.2s linear;
 }
