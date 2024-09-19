@@ -8,7 +8,8 @@ body {
     --color-red: #D0161D;
     --color-yellow: #C79E51;
     --color-black: #313131;
-    --color-gray: #f0f0f0;
+    --color-gray: #d5d5d5;
+    --background-gray: #f0f0f0;
     --color-strong-gray: #2D2D2D;
 }
 
@@ -1273,6 +1274,9 @@ body {
     .slider .slider-list .slider-item img {
         width: 20vw !important;
         height: 100%;
+    }
+    .background-gray::before{
+        display: none !important;
     }
 
 }
@@ -3387,3 +3391,12 @@ button[type="submit"]:hover {
     opacity: 100% !important;
     transition: opacity 0.2s linear;
 }
+
+.background-gray::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 72.1vw;
+    color: var(--background-gray);
+}
+
