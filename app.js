@@ -19,3 +19,15 @@ document.addEventListener('DOMContentLoaded', function() {
         .addTo(controller);  // Añadir la escena al controlador de ScrollMagic
     });
 });
+
+//scrolling buttons
+
+document.querySelectorAll('.scroll-btn').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

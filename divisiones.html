@@ -39,7 +39,9 @@
             </div>
         </div>
         <nav class="nav-bar">
-            <img class="logo-img" src="/icons/logoT.png" alt="logo Ticarsa">
+            <a href="index.html">
+                <img class="logo-img" src="/icons/logoT.png" alt="logo Ticarsa">
+            </a>
             <nav role="navigation">
                 <div id="menuToggle">
                   <input type="checkbox">
@@ -47,11 +49,21 @@
                   <span></span>
                   <span></span>
                   <ul id="menu">
-                    <a href="index.html"><li>Inicio</li></a>
-                    <a href="divisiones.html"><li>Divisiones</li></a>
-                    <a href="empresa.html"><li>Empresa</li></a>
-                    <a href="#"><li>Contacto</li></a>
-                    <a href="#"><li>Bolsa de trabajo</li></a>
+                    <a href="index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a class="scroll-btn" href="#services">
+                        <li>Divisiones</li>
+                    </a>
+                    <a href="empresa.html">
+                        <li>Empresa</li>
+                    </a>
+                    <a class="scroll-btn" href="#contact">
+                        <li>Contacto</li>
+                    </a>
+                    <a href="bolsa-de-trabajo.html">
+                        <li>Bolsa de trabajo</li>
+                    </a>
                     <div class="menu-element language-container">
                         <a class="lang-img" href="#">
                             <img src="icons/mx.png" alt="cambiar a español">
@@ -243,7 +255,7 @@
             SERVICIOS QUE PUEDEN INTERESARTE
         </h2>
         <div class="list-container">
-            <div class="service-container animup initial-opacity-transition">
+            <div class="service-container animup initial-opacity-transition" id="services">
                 <img class="service-icon-container" src="/icons/service.png">
                 <img class="service-icon" src="/icons/iconCaja.png" alt="cajas secas">
                 <div class="service-title">
@@ -251,7 +263,7 @@
                 </div>
                 <div class="service-description">
                     <p class="text">Transporte de mercancias y retail en general.</p>
-                    <a href="#" class="text">
+                    <a href="/divisiones/cajas-secas.html" class="text">
                         <img src="/icons/flecha.png">
                         Ver Más
                     </a>
@@ -266,7 +278,7 @@
                 </div>
                 <div class="service-description">
                     <p class="text">Transporte de alimentos, lácteos, farmaceúticos y más.</p>
-                    <a href="#" class="text">
+                    <a href="/divisiones/refrigerados.html" class="text">
                         <img src="/icons/flecha.png">
                         Ver Más
                     </a>
@@ -281,7 +293,7 @@
                 </div>
                 <div class="service-description">
                     <p class="text">Transporte de acero, aluminio y diversos materiales.</p>
-                    <a href="#" class="text">
+                    <a href="/divisiones/plataformas.html" class="text">
                         <img src="/icons/flecha.png">
                         Ver Más
                     </a>
@@ -296,7 +308,7 @@
                 </div>
                 <div class="service-description">
                     <p class="text">Transportación de granos y alimentos avícola y porcícola.</p>
-                    <a href="#" class="text">
+                    <a href="/divisiones/tolvas-de-alimentos.html" class="text">
                         <img src="/icons/flecha.png">
                         Ver Más
                     </a>
@@ -336,7 +348,7 @@
         </div>
     </section>
 
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
         <div class="inner-contact-container">
             <div class="form-container">
                 <h2 class="title form-title">ESTAMOS LISTOS PARA SERVIRTE</h2>
