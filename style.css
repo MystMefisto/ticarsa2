@@ -3397,6 +3397,7 @@ button[type="submit"]:hover {
     width: 100%;
     position: absolute;
     height: 72.1vw;
-    color: var(--background-gray);
+    background-color: var(--background-gray);
+    z-index: -1;
 }
 
