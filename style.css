@@ -3335,8 +3335,6 @@ footer .logo-img {
 
 /* Hovers */
 
-
-
 .about-button:hover, .presentation-button:hover, .coverage-button:hover, .division-button:hover, .bolsa-container:nth-of-type(n+2) .bolsa-description .bolsa-button.bolsa-button-mobile:hover {
     background-color: var(--color-yellow);
     transition: background-color 0.25s ease;
@@ -3378,6 +3376,14 @@ button[type="submit"]:hover {
     transition: filter 0.25s ease;
 }
 
-.Offuscated{
-    display: none !important;
+/* Utility Class */
+
+.initial-opacity-transition {
+    opacity: 0% !important;
+    transition: opacity 0.1s linear;
+}
+
+.final-opacity-transition {
+    opacity: 100% !important;
+    transition: opacity 0.1s linear;
 }

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .on("enter", function () {
             // Añadir clases de animación al entrar en el viewport
-            element.classList.add('animate__animated', 'animate__fadeInUp');
+            element.classList.add('animate__animated', 'animate__fadeInUp','final-opacity-transition');
         })
         .addTo(controller);  // Añadir la escena al controlador de ScrollMagic
     });
