@@ -1627,6 +1627,7 @@ a,
     display: flex;
     margin: auto;
     margin-left: 6.4vw;
+    width: 19vw;
     gap: 1.4vw;
     justify-content: flex-start;
 }
