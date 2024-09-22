@@ -1628,7 +1628,7 @@ a,
     margin: auto;
     margin-left: 6.4vw;
     width: 19vw;
-    gap: 1.4vw;
+    gap: 2vw;
     justify-content: flex-start;
 }
 
@@ -1671,8 +1671,8 @@ a,
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 19vw;
-    height: 19vw;
+    width: 17.8vw;
+    height: 18vw;
     backdrop-filter: none;
     border-radius: 1vw;
 }
