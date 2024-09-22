@@ -262,6 +262,7 @@ body {
         padding-bottom: 7.7vw !important;
         margin-left: 0vw !important;
         margin-top: 3vw !important;
+        padding-right: 6vw;
     }
 
     .presentation-menu-container {
@@ -741,6 +742,7 @@ body {
     .nav-privacy {
         display: flex !important;
         flex-direction: column !important;
+        padding-right: 7vw;
     }
 
     footer {
@@ -1359,6 +1361,7 @@ a,
     width: 79vw;
     justify-content: center;
     align-items: center;
+    margin-bottom: -6vw;
 }
 
 .presentation-video-container video {
@@ -1410,6 +1413,7 @@ a,
     content: "/";
     margin: 0 1vw;
     color: var(--color-red);
+    margin: 0 .8vw;
 }
 
 
@@ -1419,6 +1423,12 @@ a,
     font-size: .8vw;
     font-weight: 300;
     margin-left: 5vw;
+}
+
+.info-container a:nth-of-type(1)::after, .info-container a:nth-of-type(2)::after {
+    content: "/";
+    color: var(--color-red);
+    margin: 0 .8vw;
 }
 
 .nav-bar {
@@ -1433,10 +1443,13 @@ a,
     display: none;
 }
 
+.nav-bar .logo-img{
+    margin-left: 5.2vw;
+}
+
 .logo-img {
     width: auto;
     height: 4.1vw;
-    margin-left: 5.2vw;
 }
 
 .rss-container img {
@@ -1476,6 +1489,48 @@ a,
 .lang-img img:nth-child(1) {
     margin-right: .5vw;
 }
+
+/* Estilo para el dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-bottom: 1vw;
+    top: 0;
+    left: -1vw;
+    padding: 1vw 0 1vw 0;
+    margin-top: 1.2vw;
+}
+
+.dropdown-content li {
+    padding: .3vw 1vw;
+    width: 10vw;
+    list-style: none;
+}
+
+.dropdown-content li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+  color:red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 .presentation-img {
     display: flex;
@@ -1574,6 +1629,10 @@ a,
     margin-left: 6.4vw;
     gap: 1.4vw;
     justify-content: flex-start;
+}
+
+.second-list-container {
+    padding-top: 5vw;
 }
 
 .services-list-title {
@@ -2278,6 +2337,7 @@ footer {
     padding-top: 5.7vw;
     padding-bottom: 6.5vw;
     margin: 0 2vw;
+    margin-right: 5.3vw;
 }
 
 .nav-privacy {
@@ -2322,7 +2382,6 @@ footer .menu-container .menu-element {
 footer .logo-img {
     width: auto;
     height: 4.1vw;
-    margin-left: 5.2vw;
     margin-bottom: 2vw;
 }
 
@@ -2570,6 +2629,7 @@ footer .logo-img {
     display: flex;
     align-items: center;
     width: 78.4vw;
+    padding-top: 2vw;
     margin: auto;
     gap: 2vw;
 }
@@ -2581,6 +2641,7 @@ footer .logo-img {
 
 .history-title {
     color: var(--color-red);
+    margin: 0;
 }
 
 .history-title::before {
@@ -2618,7 +2679,7 @@ footer .logo-img {
 .operators-container {
     display: flex;
     position: relative;
-    padding-bottom: 7vw;
+    padding-bottom: 4vw;
     flex-direction: column;
     width: 78vw;
     margin: auto;
@@ -2654,7 +2715,7 @@ footer .logo-img {
 }
 
 .operators-header .text {
-    margin-top: 3.6vw;
+    margin-top: 1.8vw;
 }
 
 .inner-operators-container {
@@ -2690,8 +2751,9 @@ footer .logo-img {
 .column {
     display: flex;
     flex-direction: column;
-    gap: 1.6vw;
+    gap: 1.3vw;
     margin-right: 2vw;
+    padding-top: 0.7vw;
 }
 
 .column p {
@@ -2709,12 +2771,14 @@ footer .logo-img {
 
 .operators-title {
     color: var(--color-red);
+    margin: 0;
+    padding-bottom: 3vw;
 }
 
 .profesional-container {
     display: flex;
     position: relative;
-    padding-bottom: 7vw;
+    padding-bottom: 4.3vw;
     flex-direction: column;
     width: 78vw;
     margin: auto;
@@ -2723,10 +2787,11 @@ footer .logo-img {
 .header-profesional-container {
     display: flex;
     gap: 2vw;
+    padding: 2vw 0 2vw 0;
 }
 
 .header-profesional-container p {
-    margin-top: 3.5vw;
+    margin-top: 1.8vw;
 }
 
 .profesional-icons {
@@ -2744,6 +2809,7 @@ footer .logo-img {
 
 .profesional-title {
     color: var(--color-red);
+    margin: 0;
 }
 
 .profesional-icons p {
@@ -2786,10 +2852,11 @@ footer .logo-img {
 .header-ambient-container {
     display: flex;
     gap: 2vw;
+    padding: 2vw 0 2vw 0;
 }
 
 .header-ambient-container .text {
-    margin-top: 3.5vw;
+    margin-top: 1.8vw;
 }
 
 .ambient-body {
@@ -2818,7 +2885,7 @@ footer .logo-img {
 .inner-ambient-container {
     display: flex;
     position: relative;
-    padding-bottom: 7vw;
+    padding-bottom: 4vw;
     gap: 3vw;
     align-items: center;
 }
@@ -2829,6 +2896,7 @@ footer .logo-img {
 
 .ambient-title {
     color: var(--color-red);
+    margin: 0;
 }
 
 .ambient-title::before {
@@ -2924,10 +2992,11 @@ footer .logo-img {
     display: flex;
     margin: auto;
     gap: 1.5vw;
+    padding-top: 2vw;
 }
 
 .security-text {
-    margin-top: 3.5vw;
+    margin-top: 1.8vw;
 }
 
 .security-item {
@@ -2960,6 +3029,7 @@ footer .logo-img {
 
 .security-title {
     color: var(--color-red);
+    margin-top: 0;
 }
 
 .security-title::before {
@@ -3017,7 +3087,7 @@ footer .logo-img {
 }
 
 .disclaimer-container {
-    padding: 3vw 0 .0 0;
+    padding: 4vw 0 .0 0;
     display: flex;
     width: 78.4vw;
     margin-left: 6vw;

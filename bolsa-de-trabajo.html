@@ -15,59 +15,81 @@
         <div class="header-container">
             <div class="info-container">
                 Tels. &nbsp;
-                <a href="tel:8282824010" class="phone-number-1">828 282 4010 </a>
-                <a href="tel:8288247110" class="phone-number-2">/ 828 824 7110 </a>
-                <a href="mailto:contacto@ticarsa.com.mx" class="email">/ contacto@ticarsa.com.mx</a>
+                <a href="tel:8282824010" class="phone-number-1">828 282 4010</a>
+                <a href="tel:8288247110" class="phone-number-2">828 824 7110</a>
+                <a href="mailto:contacto@ticarsa.com.mx" class="email">contacto@ticarsa.com.mx</a>
             </div>
 
             <div class="rss-container">
-                <a href="#" class="rss-img">
+                <a href="https://www.facebook.com/ticarsa" class="rss-img">
                     <img src="icons/fb2.png" alt="facebook">
                 </a>
-                <a href="#" class="rss-img">
+                <a href="https://www.instagram.com/ticarsamx/" class="rss-img">
                     <img src="icons/ins2.png" alt="instagram">
                 </a>
-                <a href="#" class="rss-img">
+                <a href="https://www.youtube.com/@ticarsaoficial" class="rss-img">
                     <img src="icons/you2.png" alt="youtube">
                 </a>
-                <a href="#" class="rss-img">
+                <a href="https://www.tiktok.com/@ticarsaoficial" class="rss-img">
                     <img src="icons/tik2.png" alt="tiktok">
                 </a>
-                <a href="#" class="rss-img">
+                <a href="https://www.linkedin.com/company/ticarsa" class="rss-img">
                     <img src="icons/in2.png" alt="linkedin">
                 </a>
             </div>
         </div>
         <nav class="nav-bar">
-            <a href="index.html">
+            <a href="#">
                 <img class="logo-img" src="/icons/logoT.png" alt="logo Ticarsa">
             </a>
+
             <nav role="navigation">
                 <div id="menuToggle">
-                  <input type="checkbox">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <ul id="menu">
-                    <a href="index.html"><li>Inicio</li></a>
-                    <a href="divisiones.html"><li>Divisiones</li></a>
-                    <a href="empresa.html"><li>Empresa</li></a>
-                    <a href="#"><li>Contacto</li></a>
-                    <a href="#"><li>Bolsa de trabajo</li></a>
-                    <div class="menu-element language-container">
-                        <a class="lang-img" href="#">
-                            <img src="icons/mx.png" alt="cambiar a español">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="index.html">
+                            <li>Inicio</li>
                         </a>
-                        <a class="lang-img" href="en/job-openings.html">
-                            <img src="icons/usa.png" alt="cambiar a inglés">
+                        <a class="scroll-btn" href="#services">
+                            <li>Divisiones</li>
                         </a>
-                    </div>
-                  </ul>
+                        <a href="empresa.html">
+                            <li>Empresa</li>
+                        </a>
+                        <a class="scroll-btn" href="#contact">
+                            <li>Contacto</li>
+                        </a>
+                        <a href="bolsa-de-trabajo.html">
+                            <li>Bolsa de trabajo</li>
+                        </a>
+                        <div class="menu-element language-container">
+                            <a class="lang-img" href="#">
+                                <img src="icons/mx.png" alt="cambiar a español">
+                            </a>
+                            <a class="lang-img" href="en.html">
+                                <img src="icons/usa.png" alt="cambiar a inglés">
+                            </a>
+                        </div>
+                    </ul>
                 </div>
-              </nav>
+            </nav>
             <div class="menu-container">
                 <a class="menu-element menu-separation" href="index.html">Inicio</a>
-                <a class="menu-element menu-separation" href="divisiones.html">Divisiones</a>
+                <div class="menu-element text menu-separation dropdown">
+                    <a class="scroll-btn" href="#services">Divisiones</a>
+                    <ul class="dropdown-content">
+                        <li><a href="divisiones/cajas-secas.html">Cajas Secas</a></li>
+                        <li><a href="divisiones/refrigerados.html">Refrigerados</a></li>
+                        <li><a href="divisiones/plataformas.html">Plataformas</a></li>
+                        <li><a href="divisiones/tolvas-de-alimentos.html">Tolvas Alimentos</a></li>
+                        <li><a href="divisiones/autotanques.html">Autotanques</a></li>
+                        <li><a href="divisiones/tolvas-presurizadas.html">Tolvas Presurizadas</a></li>
+                        <li><a href="divisiones/iso-tanques.html">Iso Tanques</a></li>
+                    </ul>
+                </div>
                 <a class="menu-element menu-separation" href="empresa.html">Empresa</a>
                 <a class="menu-element menu-separation scroll-btn" href="#contact">Contacto</a>
                 <a class="menu-element" href="bolsa-de-trabajo.html">Bolsa de trabajo</a>
@@ -75,7 +97,7 @@
                     <a class="lang-img" href="#">
                         <img src="icons/mx.png" alt="cambiar a español">
                     </a>
-                    <a class="lang-img" href="en/job-openings.html">
+                    <a class="lang-img" href="/en/job-openings.html">
                         <img src="icons/usa.png" alt="cambiar a inglés">
                     </a>
                 </div>
@@ -95,11 +117,11 @@
             Postúlate a la vacante de tu interés:</p>
 
             <div class="button-container animate__animated animate__fadeInUp">
-                <a class="bolsa-button" href="#">
+                <a class="bolsa-button scroll-btn" href="#operator-school">
                     <img src="/icons/flechaR.png">
                     Operadores
                 </a>
-                <a class="bolsa-button" href="#">
+                <a class="bolsa-button scroll-btn" href="#admin">
                     <img src="/icons/flechaR.png">
                     Administrativo
                 </a>
@@ -107,7 +129,7 @@
         </div>
     </section>
 
-    <section class="bolsa-container line-decoration-bolsa">
+    <section class="bolsa-container line-decoration-bolsa" id="wheel-operator">
         <img src="/icons/opera.png" alt="" class="presentation-img bolsa-img animup initial-opacity-transition">
         <img src="/icons/operaCel.png" alt="" class="presentation-img bolsa-img-mobile animup initial-opacity-transition">
         <div class="bolsa-description">
@@ -126,14 +148,14 @@
                 <li>Actividad de apoyo a familiares.</li>
             </ul>
 
-            <a class="bolsa-button bolsa-button-mobile animup initial-opacity-transition" href="#">
+            <a class="bolsa-button bolsa-button-mobile animup initial-opacity-transition" href="https://wa.me/528119085976">
                 <img src="/icons/flecha.png">
                 Whatsapp
             </a>
         </div>
     </section>
 
-    <section class="bolsa-container line-decoration-bolsa">
+    <section class="bolsa-container line-decoration-bolsa" id="operator-school">
         <img src="/icons/bolsaopera.png" alt="" class="presentation-img bolsa-img animup initial-opacity-transition">
         <img src="/icons/bolsaoperaCel.png" alt="" class="presentation-img bolsa-img-mobile animup initial-opacity-transition">
         <div class="bolsa-description">
@@ -174,14 +196,14 @@
             </div>
             
 
-            <a class="bolsa-button bolsa-button-mobile animup initial-opacity-transition" href="#">
+            <a class="bolsa-button bolsa-button-mobile animup initial-opacity-transition" href="https://wa.me/528119085976">
                 <img src="/icons/flecha.png">
                 Whatsapp
             </a>
         </div>
     </section>
 
-    <section class="bolsa-container line-decoration-bolsa">
+    <section class="bolsa-container line-decoration-bolsa" id="admin">
         <img src="/icons/admin.png" alt="" class="presentation-img bolsa-img animup initial-opacity-transition">
         <img src="/icons/adminCel.png" alt="" class="presentation-img bolsa-img-mobile animup initial-opacity-transition">
         <div class="bolsa-description">
@@ -199,7 +221,7 @@
                 <li>Instalaciones y equipo moderno de trabajo</li>
             </ul>
 
-            <a class="bolsa-button bolsa-button-mobile animup initial-opacity-transition" href="#">
+            <a class="bolsa-button bolsa-button-mobile animup initial-opacity-transition" href="https://wa.me/528119085976">
                 <img src="/icons/flecha.png">
                 Whatsapp
             </a>
@@ -257,24 +279,24 @@
                 <div class="inner-direct-contact-container">
                     <h3>Contactos directos</h3>
                     <a class="icons-img" href="#"><img src="icons/tel.png" alt="">828 282 4010 / 828 824 7110</a>
-                    <a class="icons-img" href="#"><img src="icons/wa.png" alt="">81 1908 5976</a>
-                    <a class="icons-img" href="#"><img src="icons/mail.png" alt="">contacto@ticarsa.com.mx</a>
-                    <a class="icons-img" href=""><img src="icons/ubic.png" alt="">Autopista Cadereyta a Reynosa Km 36.5 Cadedreyra Jiménez N.L. C.P. 67483</a>
+                    <a class="icons-img" href="https://wa.me/528119085976"><img src="icons/wa.png" alt="">81 1908 5976</a>
+                    <a class="icons-img" href="mailto:contacto@ticarsa.com.mx"><img src="icons/mail.png" alt="">contacto@ticarsa.com.mx</a>
+                    <a class="icons-img" href="https://maps.app.goo.gl/sQifUYBKEu8UiV9c7"><img src="icons/ubic.png" alt="">Autopista Cadereyta a Reynosa Km 36.5 Cadedreyra Jiménez N.L. C.P. 67483</a>
                 </div>
                 <div class="rss-container contact-rss">
-                    <a href="#" class="rss-img">
+                    <a href="https://www.facebook.com/ticarsa" class="rss-img">
                         <img src="icons/fb.png" alt="facebook">
                     </a>
-                    <a href="#" class="rss-img">
+                    <a href="https://www.instagram.com/ticarsamx/" class="rss-img">
                         <img src="icons/ins.png" alt="instagram">
                     </a>
-                    <a href="#" class="rss-img">
+                    <a href="https://www.youtube.com/@ticarsaoficial" class="rss-img">
                         <img src="icons/you.png" alt="youtube">
                     </a>
-                    <a href="#" class="rss-img">
+                    <a href="https://www.tiktok.com/@ticarsaoficial" class="rss-img">
                         <img src="icons/tik.png" alt="tiktok">
                     </a>
-                    <a href="#" class="rss-img">
+                    <a href="https://www.linkedin.com/company/ticarsa" class="rss-img">
                         <img src="icons/in1.png" alt="linkedin">
                     </a>
                 </div>
