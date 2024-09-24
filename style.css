@@ -1353,6 +1353,8 @@ a,
     margin: auto;
     border-radius: 8px;
     margin-left: 4vw;
+    height: 33vw;
+    top: -2vw;
 }
 
 .presentation-video-container{
@@ -1361,7 +1363,7 @@ a,
     width: 79vw;
     justify-content: center;
     align-items: center;
-    margin-bottom: -6vw;
+    margin-bottom: -13vw;
 }
 
 .presentation-video-container video {
@@ -1370,7 +1372,7 @@ a,
     margin: auto;
     clip-path: polygon(0% 27%, 100% 27%, 102% 93%, 97% 100%, 0 100%);
     position: relative;
-    top: -11.3vw;
+    top: -14.3vw;
     left: -2vw;
 }
 
@@ -1564,7 +1566,7 @@ a,
 .presentation-menu-container {
     display: flex;
     position: absolute;
-    top: 28.7vw;
+    top: 29.7vw;
     left: 23.1vw;
     width: 44.7vw;
     height: 4vw;
@@ -1605,7 +1607,6 @@ a,
 }
 
 .services-header-container {
-    padding-top: 5.1vw;
     display: flex;
     position: relative;
     width: 71vw;
@@ -1630,6 +1631,7 @@ a,
     width: 19vw;
     gap: 2vw;
     justify-content: flex-start;
+    cursor: pointer;
 }
 
 .second-list-container {
@@ -2196,6 +2198,11 @@ a,
     color: white;
 }
 
+.icons-img:first-of-type a{
+    font-size: 1.15vw;
+    color: white;
+}
+
 .icons-img:nth-child(4),
 .icons-img:nth-child(5) {
     font-weight: 400;
@@ -2238,6 +2245,16 @@ textarea {
     height: 2vw;
     padding-left: 1.3vw;
     resize: none;
+}
+
+input:focus, textarea:focus {
+    border: var(--color-yellow);
+    box-shadow: 0 0 80px .5vw rgba(199, 158, 81, 1);
+    outline: none;
+}
+
+input, textarea{
+    transition: box-shadow .5s ease;
 }
 
 button[type="submit"] {
@@ -2292,6 +2309,10 @@ button[type="submit"] img {
     font-family: 'gotham';
     margin: 0;
     margin-top: 4vw;
+}
+
+.inner-direct-contact-container a:hover, .footer-nav a:hover {
+    text-shadow: 2px 2px 10px rgb(255 255 255 / 70%);
 }
 
 .contact-rss {
@@ -2544,6 +2565,7 @@ footer .logo-img {
     margin: auto;
     border-radius: 8px;
     margin-left: 4vw;
+    height: 32vw;
 }
 
 .about-presentation-img {

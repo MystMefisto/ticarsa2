@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     // Inicializamos el controlador de ScrollMagic
     const controller = new ScrollMagic.Controller();
@@ -20,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('click', function(e){
+    if(e.target.classList.contains('service-container')){
+        console.log('hola');
+    }
+});
+
 //scrolling buttons
 
 document.querySelectorAll('.scroll-btn').forEach(button => {
@@ -29,5 +36,24 @@ document.querySelectorAll('.scroll-btn').forEach(button => {
         document.querySelector(targetId).scrollIntoView({
             behavior: 'smooth'
         });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const serviceListContainer = document.querySelector('.clickeable-service');
+
+    if (!serviceListContainer) {
+        console.error('No se encontró el contenedor con clase .services-list-container');
+        return;
+    }
+
+    serviceListContainer.addEventListener('click', function(event) {        
+        const serviceContainer = event.target.closest('.service-container').querySelector('.service-description a').getAttribute('href');
+
+        if (serviceContainer) {
+            window.location.href = serviceContainer;
+        } else {
+            console.log('El clic no fue en un contenedor de servicios.');
+        }
     });
 });
