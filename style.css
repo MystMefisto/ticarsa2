@@ -2843,12 +2843,29 @@ footer .logo-img {
 .profesional-icons p::before {
     content: "";
     position: absolute;
-    background: var(--color-red);
     width: 3.5vw;
     height: 3.5vw;
     margin-left: -4.2vw;
     margin-top: -.7vw;
-    border-radius: 5vw;
+    background-size: contain;  /* Ajusta el tamaño de la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-position: center;
+}
+
+.profesional-icons p:nth-of-type(1):before{
+    background-image: url('icons/prof1.png');  /* Ruta de la imagen */
+}
+
+.profesional-icons p:nth-of-type(2):before{
+    background-image: url('icons/prof2.png');  /* Ruta de la imagen */
+}
+
+.profesional-icons p:nth-of-type(3):before{
+    background-image: url('icons/prof3.png');  /* Ruta de la imagen */
+}
+
+.profesional-icons p:nth-of-type(4):before{
+    background-image: url('icons/prof4.png');  /* Ruta de la imagen */
 }
 
 .inner-profesional-container {
