@@ -2357,7 +2357,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding-top: 5.7vw;
-    padding-bottom: 6.5vw;
+    padding-bottom: 3vw;
     margin: 0 2vw;
     margin-right: 5.3vw;
 }
@@ -2566,12 +2566,14 @@ footer .logo-img {
     border-radius: 8px;
     margin-left: 4vw;
     height: 32vw;
+    margin-bottom: -7vw;
 }
 
 .about-presentation-img {
     display: flex;
     margin-left: 6.2vw;
     width: 78.4vw;
+    height: 25vw;
 }
 
 .about-presentation-description {
@@ -2759,7 +2761,7 @@ footer .logo-img {
 }
 
 .operators-column img {
-    height: 5vw;
+    height: 3.5vw;
 }
 
 .inner-operator-column h3 {
@@ -2775,8 +2777,9 @@ footer .logo-img {
     display: flex;
     flex-direction: column;
     gap: 1.3vw;
-    margin-right: 2vw;
     padding-top: 0.7vw;
+    position: relative;
+    left: -3vw;
 }
 
 .column p {
