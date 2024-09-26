@@ -215,7 +215,7 @@ body {
     }
 
     .title {
-        font-size: 5vw !important;
+        font-size: 5.5vw !important;
     }
 
     .title-decoration::before {
@@ -242,6 +242,19 @@ body {
         border-radius: 0 !important;
     }
 
+    .presentation-video-container{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .presentation-video-container video {
+        height: auto !important;
+        width: 100% !important;
+        left: 0 !important;
+        clip-path: none !important;
+        top: 0 !important;
+    }
+
     .nav-bar {
         width: 100% !important;
     }
@@ -262,7 +275,6 @@ body {
         padding-bottom: 7.7vw !important;
         margin-left: 0vw !important;
         margin-top: 3vw !important;
-        padding-right: 6vw;
     }
 
     .presentation-menu-container {
@@ -271,10 +283,11 @@ body {
         left: auto !important;
         width: 100% !important;
         height: 8vw !important;
+        padding: 3vw 0;
     }
 
     .presentation-title {
-        top: auto !important;
+        top: -22vw !important;
         left: auto !important;
         margin-left: 11vw !important;
     }
@@ -284,6 +297,7 @@ body {
         margin-top: 0 !important;
         line-height: 2.8vw !important;
         left: 11vw !important;
+        top: -11vw !important;
     }
 
     .presentation-button {
@@ -295,17 +309,22 @@ body {
     }
 
     .presentation-menu-button {
-        font-size: 2vw !important;
+        font-size: 2.4vw !important;
         width: 100% !important;
     }
 
     .text {
-        font-size: 2.45vw !important;
+        font-size: 2.6vw !important;
+    }
+
+    .services-container{
+        margin-top: 6vw !important;
     }
 
     .services-header-container {
         flex-direction: column !important;
         align-items: flex-start !important;
+        top: 24vw !important;
     }
 
     .services-title {
@@ -336,43 +355,67 @@ body {
     .list-container {
         flex-wrap: wrap !important;
         justify-content: space-between !important;
+        width: 72vw !important;
+        gap: 9vw 1vw !important;
+        margin-left: 0 !important;
+    }
+
+    .second-list-container{
+        padding-top: 0 !important;
+        padding-top: 9vw !important;
+        padding-bottom: 4vw !important;
     }
 
     .service-container {
-        width: 35vw !important;
+        width: 27.5vw !important;
         height: 23vw !important;
     }
 
+    .services-list-container {
+        padding-top: 26vw !important;
+        margin-left: 2vw !important;
+    }
+
     .service-icon-container {
-        height: 56vw !important;
+        display: none !important;
+    }
+
+    .service-icon-container-responsive{
+        display: flex !important;
+        width: 35vw;
+        height: 29vw;
     }
 
     .service-icon {
         height: 7.5vw !important;
-        padding: 3.7vw 5.6vw !important;
+        padding: 4.7vw 5.5vw !important;
     }
 
     .plat-icon {
-        padding: 3.7vw 1.8vw !important;
+        padding: 4.7vw 2.23vw !important;
     }
 
     .tolva-alimento-icon {
         height: 8vw !important;
-        padding: 3.4vw 7vw !important;
+        padding: 4.4vw 6.8vw !important;
     }
 
     .tolva-presurizada-icon {
-        padding: 3.7vw 3.2vw !important;
+        padding: 4.7vw 3.15vw !important;
     }
 
     .service-title {
-        font-size: 3vw !important;
+        font-size: 3.3vw !important;
         height: 5vw !important;
+        top: 17.5vw !important;
+        width: 32vw !important;
     }
 
     .service-container a {
-        font-size: 1.9vw !important;
-        bottom: 2vw !important;
+        font-size: 2.2vw !important;
+        width: 30vw !important;
+        top: 13vw !important;
+        gap: .6vw !important;
     }
 
     .service-container a::before {
@@ -380,7 +423,7 @@ body {
     }
 
     .service-description img {
-        height: 2.3vw !important;
+        height: 2.2vw !important;
     }
 
     .about-header {
@@ -430,10 +473,6 @@ body {
         display: none !important;
     }
 
-    .presentation-img-visibility {
-        display: none !important;
-    }
-
     .inner-about h2 {
         font-size: 3.7vw !important;
     }
@@ -457,11 +496,12 @@ body {
     }
 
     .about-button {
-        font-size: 1.9vw !important;
+        font-size: 2.2vw !important;
         gap: 0.4vw !important;
         height: 4vw !important;
         width: 16.2vw !important;
         margin-top: 1.3vw !important;
+        padding: 0.8vw 0 !important;
     }
 
     .clients-header {
@@ -542,6 +582,7 @@ body {
         height: 4vw !important;
         width: 16.2vw !important;
         margin-top: 1.3vw !important;
+        padding: 0.8vw 0 !important;
     }
 
     .ubication-list {
@@ -647,11 +688,7 @@ body {
     }
 
     .social-responsability-body img {
-        width: 80vw !important;
-    }
-
-    .social-responsability-body img:nth-of-type(n+3) {
-        display: none !important;
+        width: 34.5vw !important;
     }
 
     form {
@@ -668,6 +705,7 @@ body {
 
     .form-title {
         text-align: center !important;
+        font-size: 5vw !important;
     }
 
     .form-text {
@@ -742,12 +780,12 @@ body {
     .nav-privacy {
         display: flex !important;
         flex-direction: column !important;
-        padding-right: 7vw;
     }
 
     footer {
         display: flex !important;
         flex-direction: column-reverse !important;
+        margin: auto !important;
     }
 
     .nav-privacy a,
@@ -1053,8 +1091,10 @@ body {
     }
 
     .related-posts .list-container {
-        gap: 7vw !important;
+        gap: 10vw !important;
         padding: 7vw 0 12vw 0 !important;
+        margin: auto !important;
+        margin-left: 8vw !important;
     }
 
     .history-container {
@@ -1140,12 +1180,13 @@ body {
         width: 78.6vw !important;
         background-color: var(--color-gray) !important;
         height: 0.1vw !important;
-        top: 71vw !important;
+        top: 77vw !important;
         left: 0 !important;
     }
 
     .column p {
         color: var(--color-red) !important;
+        margin-left: -2.6vw !important;
     }
 
     .column li::marker {
@@ -1681,6 +1722,10 @@ a,
 
 .service-icon-container {
     height: 19vw;
+}
+
+.service-icon-container-responsive{
+    display: none;
 }
 
 .service-container,
