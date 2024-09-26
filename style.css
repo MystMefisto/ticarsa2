@@ -219,7 +219,7 @@ body {
     }
 
     .title-decoration::before {
-        font-size: 5vw !important;
+        font-size: 5.5vw !important;
     }
 
     .presentation-img-mobile {
@@ -309,12 +309,12 @@ body {
     }
 
     .presentation-menu-button {
-        font-size: 2.4vw !important;
+        font-size: 2.6vw !important;
         width: 100% !important;
     }
 
     .text {
-        font-size: 2.6vw !important;
+        font-size: 2.9vw !important;
     }
 
     .services-container{
@@ -382,8 +382,7 @@ body {
 
     .service-icon-container-responsive{
         display: flex !important;
-        width: 35vw;
-        height: 29vw;
+        width: 36.5vw;
     }
 
     .service-icon {
@@ -405,16 +404,16 @@ body {
     }
 
     .service-title {
-        font-size: 3.3vw !important;
+        font-size: 3.5vw !important;
         height: 5vw !important;
-        top: 17.5vw !important;
-        width: 32vw !important;
+        top: 18.5vw !important;
+        width: 34.4vw !important;
     }
 
     .service-container a {
-        font-size: 2.2vw !important;
+        font-size: 2.6vw !important;
         width: 30vw !important;
-        top: 13vw !important;
+        top: 14.4vw !important;
         gap: .6vw !important;
     }
 
@@ -423,7 +422,7 @@ body {
     }
 
     .service-description img {
-        height: 2.2vw !important;
+        height: 2.6vw !important;
     }
 
     .about-header {
@@ -436,7 +435,7 @@ body {
     }
 
     .about-text {
-        width: 79% !important;
+        width: 85% !important;
     }
 
     .inner-about {
@@ -474,7 +473,7 @@ body {
     }
 
     .inner-about h2 {
-        font-size: 3.7vw !important;
+        font-size: 4.3vw !important;
     }
 
     .about-img-container:nth-child(1) {
@@ -496,7 +495,7 @@ body {
     }
 
     .about-button {
-        font-size: 2.2vw !important;
+        font-size: 2.6vw !important;
         gap: 0.4vw !important;
         height: 4vw !important;
         width: 16.2vw !important;
@@ -534,7 +533,7 @@ body {
     }
 
     .clients-text {
-        width: 70% !important;
+        width: 73% !important;
     }
 
     .coverage-container {
@@ -572,12 +571,12 @@ body {
 
     .coverage-ubication {
         padding-top: 1vw !important;
-        gap: 11vw !important;
+        gap: 2vw !important;
         line-height: 4vw !important;
     }
 
     .coverage-button {
-        font-size: 2.2vw !important;
+        font-size: 2.6vw !important;
         gap: 0.4vw !important;
         height: 4vw !important;
         width: 16.2vw !important;
@@ -666,9 +665,9 @@ body {
         padding-top: 2vw !important;
         height: 7vw !important;
         line-height: 3vw !important;
-        font-size: 2.3vw !important;
+        font-size: 2.8vw !important;
         margin-bottom: 10vw !important;
-        width: 90% !important;
+        width: 102% !important;
     }
 
     .social-responsability-title {
@@ -677,6 +676,10 @@ body {
 
     .values-container {
         margin: 0 !important;
+    }
+
+    .value{
+        font-size: 2.6vw !important;
     }
 
     .value::before {
@@ -790,7 +793,7 @@ body {
 
     .nav-privacy a,
     .nav-privacy p {
-        font-size: 2vw !important;
+        font-size: 2.8vw !important;
     }
 
     .presentation-img.bolsa-img {
