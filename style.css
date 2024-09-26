@@ -816,7 +816,7 @@ body {
     }
 
     .bolsa-container:first-of-type .title {
-        width: 44vw !important;
+        width: 46vw !important;
     }
 
     .bolsa-container:first-of-type .bolsa-text {
@@ -833,6 +833,10 @@ body {
         height: 6vw !important;
         width: 23vw !important;
         border-radius: .5vw !important;
+    }
+
+    .bolsa-container:first-of-type .bolsa-button:nth-of-type(2) {
+        width: 26vw !important;
     }
 
     .bolsa-button img {
@@ -894,8 +898,8 @@ body {
 
     .line-decoration-bolsa::after {
         top: auto !important;
-        bottom: -18.2vw !important;
-        right: 9vw !important;
+        bottom: -18.4vw !important;
+        right: 5vw !important;
     }
 
     .bolsa-container.line-decoration-bolsa:nth-of-type(1)::before {
