@@ -399,6 +399,12 @@ body {
         padding: 4.7vw 2.23vw !important;
     }
 
+    .import-icon {
+        width: 26vw !important;
+        height: auto !important;
+        padding-top: 1.5vw !important;
+    }
+
     .tolva-alimento-icon {
         height: 8vw !important;
         padding: 4.4vw 6.8vw !important;
@@ -1818,6 +1824,12 @@ a,
 .plat-icon {
     height: 3.35vw;
     padding: 3vw 1.9vw;
+}
+
+.import-icon {
+    width: 13vw;
+    height: auto;
+    padding-top: 1.5vw;
 }
 
 .tolva-alimento-icon {
