@@ -319,7 +319,7 @@ body {
     }
 
     .text {
-        font-size: 2.9vw !important;
+        font-size: 3.2vw !important;
     }
 
     .services-container{
@@ -690,7 +690,7 @@ body {
     }
 
     .value{
-        font-size: 2.6vw !important;
+        font-size: 2.4vw !important;
     }
 
     .value::before {
@@ -702,7 +702,7 @@ body {
     }
 
     .social-responsability-body img {
-        width: 34.5vw !important;
+        width: 34vw !important;
     }
 
     form {
@@ -3319,7 +3319,7 @@ footer .logo-img {
     width: 8vw;
     height: 1vw;
     position: absolute;
-    top: -7px;
+    top: 2px;
     left: -5px;
     cursor: pointer;
     opacity: 0;
