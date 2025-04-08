@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,25 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticarsa</title>
     <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init({
-    publicKey: "a501cBZ0H6CpUunpO",
-  });
-})();
-</script>
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "a501cBZ0H6CpUunpO",
+          });
+       })();
+    </script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <header>
         <nav class="nav-bar">
             <a href="#">
-                <img class="logo-img" src="/icons/logoT.png" alt="logo Ticarsa">
+                <img class="logo-img" src="/icons/logoT.png" alt="Ticarsa logo">
             </a>
-    
+
             <nav role="navigation">
                 <div id="menuToggle">
                     <input type="checkbox">
@@ -32,11 +34,21 @@
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                        <a href="#"><li>Home</li></a>
-                        <a href="en/divisions.html"><li>Divisions</li></a>
-                        <a href="en/company.html"><li>Company</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="en/job-openings.html"><li>Job Openings</li></a>
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a class="scroll-btn" href="#services">
+                            <li>Divisions</li>
+                        </a>
+                        <a href="en/company.html">
+                            <li>Company</li>
+                        </a>
+                        <a class="scroll-btn" href="#contact">
+                            <li>Contact</li>
+                        </a>
+                        <a href="en/job-openings.html">
+                            <li>Job Openings</li>
+                        </a>
                         <div class="menu-element language-container">
                             <a class="lang-img" href="index.html">
                                 <img src="icons/mx.png" alt="switch to Spanish">
@@ -50,9 +62,21 @@
             </nav>
             <div class="menu-container">
                 <a class="menu-element menu-separation" href="#">Home</a>
-                <a class="menu-element menu-separation" href="en/divisions.html">Divisions</a>
+                <div class="menu-element text menu-separation dropdown">
+                    <a class="scroll-btn" href="#services">Divisions</a>
+                    <ul class="dropdown-content">
+                        <li><a href="en/divisions/dry-boxes.html">Dry Boxes</a></li>
+                        <li><a href="en/divisions/refrigerated.html">Refrigerated</a></li>
+                        <li><a href="en/divisions/platforms.html">Platforms</a></li>
+                        <li><a href="en/divisions/food-hoppers.html">Food Hoppers</a></li>
+                        <li><a href="en/divisions/auto-tanks.html">Auto Tanks</a></li>
+                        <li><a href="en/divisions/pressurized-hoppers.html">Pressurized Hoppers</a></li>
+                        <li><a href="en/divisions/iso-tanks.html">Iso Tanks</a></li>
+                        <li><a href="en/divisions/export.html">Export</a></li>
+                    </ul>
+                </div>
                 <a class="menu-element menu-separation" href="en/company.html">Company</a>
-                <a class="menu-element menu-separation" href="#">Contact</a>
+                <a class="menu-element menu-separation scroll-btn" href="#contact">Contact</a>
                 <a class="menu-element" href="en/job-openings.html">Job Openings</a>
                 <div class="menu-element language-container">
                     <a class="lang-img" href="index.html">
@@ -66,18 +90,36 @@
         </nav>
     </header>
 
-        <section class="presentation-container">
-        <img src="/icons/inicioCel.png" class="presentation-img-mobile">
-        <img src="/icons/inicio.png" alt="" class="presentation-img presentation-img-visibility">
-        <div class="presentation-description">
+    <div id="modal1" class="modalmask">
+        <div class="modalbox movedown">
+            <a href="#close" title="Close" class="close">X</a>
+            <video controls="" src="/icons/Video-Ticarsa-Full.mp4"></video>
+        </div>
+    </div>
+    <section class="presentation-container animup initial-opacity-transition">
+        <div class="presentation-video-container presentation-img-visibility animup initial-opacity-transition">
+            <video class="videoWeb" autoplay muted loop>
+                    <source src="/icons/VideoCover.mp4" type="video/mp4">
+                </video>
+                <video class="videoPhone" autoplay muted loop>
+                    <source src="/icons/VideoCover.mp4" type="video/mp4">
+                </video>
+            </div>
+        <div class="presentation-description animup initial-opacity-transition">
             <h2 class="presentation-title title title-decoration">
                 OPEN TO THE NATION
             </h2>
             <p class="presentation-text text">+50 years of experience back us up as <br> your best option in freight transportation.</p>
-            <a class="presentation-button" href="#">
-                <img src="/icons/flecha.png">
-                See More
-            </a>
+                <div class="index-buttons-container">
+                    <a class="index-button" href="#modal1">
+                        <img src="../icons/flecha.png">
+                        Watch video
+                    </a>
+                    <a class="index-button scroll-btn" href="#contact">
+                        <img src="../icons/flecha.png">
+                        See More
+                    </a>
+                </div>
         </div>
         <div class="presentation-menu-container">
             <a href="#" class="presentation-menu-button">
@@ -91,7 +133,7 @@
         </div>
     </section>
 
-     <section class="services-container">
+    <section class="services-container" id="services">
         <div class="services-header-container">
             <h2 class="services-title title title-decoration">
                 OUR SERVICES
@@ -100,121 +142,190 @@
                 Transportation solutions for any type of industry.
             </p>
         </div>
-    
+
         <div class="services-list-container clickeable-service">
-    
-            <h3 class="services-list-title">
-                GENERAL CARGO
-            </h3>
-    
+
             <div class="list-container">
-                <div class="service-container">
+                <div class="service-container animup initial-opacity-transition">
                     <img class="service-icon-container" src="/icons/service.png">
-                    <img class="service-icon" src="../icons/iconCaja.png" alt="dry boxes">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon" src="/icons/iconCaja.png" alt="Dry Boxes">
                     <div class="service-title">
                         <h4>DRY BOXES</h4>
                     </div>
                     <div class="service-description">
-                        <p class="text">Transport of goods and general retail.</p>
-                        <a href="#" class="text">
-                            <img src="../icons/flecha.png">
+                        <p class="text description-text">Transport of goods and general retail.</p>
+                        <a href="en/divisions/dry-boxes.html" class="text">
+                            <img src="/icons/flecha.png">
                             See More
                         </a>
                     </div>
                 </div>
-    
-                <div class="service-container">
+
+                <div class="service-container animup initial-opacity-transition">
                     <img class="service-icon-container" src="/icons/service.png">
-                    <img class="service-icon" src="../icons/iconRefrig.png" alt="Refrigerated">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon" src="/icons/iconRefrig.png" alt="Refrigerated">
                     <div class="service-title">
                         <h4>REFRIGERATED</h4>
                     </div>
                     <div class="service-description">
-                        <p class="text">Transport of food, dairy, pharmaceuticals, and more.</p>
-                        <a href="#" class="text">
-                            <img src="../icons/flecha.png">
+                        <p class="text description-text">Transport of food, dairy, pharmaceuticals, and more.</p>
+                        <a href="en/divisions/refrigerated.html" class="text">
+                            <img src="/icons/flecha.png">
                             See More
                         </a>
                     </div>
                 </div>
-    
-                <div class="service-container">
+
+                <div class="service-container animup initial-opacity-transition">
                     <img class="service-icon-container" src="/icons/service.png">
-                    <img class="service-icon plat-icon" src="../icons/iconPlata.png" alt="Platforms">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon plat-icon" src="/icons/iconPlata.png" alt="Platforms">
                     <div class="service-title">
                         <h4>PLATFORMS</h4>
                     </div>
                     <div class="service-description">
-                        <p class="text">Transport of steel, aluminum, and various materials.</p>
-                        <a href="#" class="text">
-                            <img src="../icons/flecha.png">
+                        <p class="text description-text">Transport of steel, aluminum, and various materials.</p>
+                        <a href="en/divisions/platforms.html" class="text">
+                            <img src="/icons/flecha.png">
                             See More
                         </a>
                     </div>
                 </div>
-    
-                <div class="service-container">
+
+                <div class="service-container animup initial-opacity-transition">
                     <img class="service-icon-container" src="/icons/service.png">
-                    <img class="service-icon tolva-alimento-icon" src="../icons/iconTolValim.png" alt="Food Hoppers">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon tolva-alimento-icon" src="/icons/iconTolValim.png" alt="Food Hoppers">
                     <div class="service-title">
                         <h4>FOOD HOPPERS</h4>
                     </div>
                     <div class="service-description">
-                        <p class="text">Transport of grains and poultry and pork food.</p>
-                        <a href="#" class="text">
-                            <img src="../icons/flecha.png">
+                        <p class="text description-text">Transport of grains and poultry and pork food.</p>
+                        <a href="en/divisions/food-hoppers.html" class="text">
+                            <img src="/icons/flecha.png">
                             See More
                         </a>
                     </div>
                 </div>
-    
-            </div>
-    
-            <h3 class="services-list-title">
-                SPECIALIZED CARGO
-            </h3>
-    
-            <div class="list-container">
-                <div class="service-container">
+
+                <div class="service-container animup initial-opacity-transition">
                     <img class="service-icon-container" src="/icons/service.png">
-                    <img class="service-icon autotanque-icon" src="../icons/iconAutoTanque.png" alt="Auto Tanks">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon autotanque-icon" src="/icons/iconAutoTanque.png" alt="Auto Tanks">
                     <div class="service-title">
                         <h4>AUTO TANKS</h4>
                     </div>
                     <div class="service-description">
-                        <p class="text">Transport of fuel and petroleum derivatives.</p>
-                        <a href="#" class="text">
-                            <img src="../icons/flecha.png">
+                        <p class="text description-text">Transport of fuel and petroleum derivatives.</p>
+                        <a href="en/divisions/auto-tanks.html" class="text">
+                            <img src="/icons/flecha.png">
                             See More
                         </a>
                     </div>
                 </div>
-    
-                <div class="service-container">
+
+                <div id="tolva-responsive-1" class="service-container animup initial-opacity-transition">
                     <img class="service-icon-container" src="/icons/service.png">
-                    <img class="service-icon tolva-presurizada-icon" src="../icons/iconTolvaPres.png" alt="Pressurized Hoppers">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon tolva-presurizada-icon" src="/icons/iconTolvaPres.png"
+                        alt="Pressurized Hoppers">
                     <div class="service-title">
                         <h4>PRESSURIZED HOPPERS</h4>
                     </div>
                     <div class="service-description">
-                        <p class="text">Transport of hazardous or chemical materials.</p>
-                        <a href="#" class="text">
-                            <img src="../icons/flecha.png">
+                        <p class="text description-text">Transport of hazardous or chemical materials.</p>
+                        <a href="en/divisions/pressurized-hoppers.html" class="text">
+                            <img src="/icons/flecha.png">
                             See More
                         </a>
                     </div>
                 </div>
-    
-                <div class="service-container">
+
+            </div>
+            <div class="list-container second-list-container">
+
+                <div id="tolva-responsive-2" class="service-container animup initial-opacity-transition">
                     <img class="service-icon-container" src="/icons/service.png">
-                    <img class="service-icon iso-tanque-icon" src="../icons/iconIsoT.png" alt="ISO Tanks">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon tolva-presurizada-icon" src="/icons/iconTolvaPres.png"
+                        alt="Pressurized Hoppers">
+                    <div class="service-title">
+                        <h4>PRESSURIZED HOPPERS</h4>
+                    </div>
+                    <div class="service-description">
+                        <p class="text description-text">Transport of hazardous or chemical materials.</p>
+                        <a href="en/divisions/pressurized-hoppers.html" class="text">
+                            <img src="/icons/flecha.png">
+                            See More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-container animup initial-opacity-transition">
+                    <img class="service-icon-container" src="/icons/service.png">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon iso-tanque-icon" src="/icons/iconIsoT.png" alt="ISO Tanks">
                     <div class="service-title">
                         <h4>ISO TANKS</h4>
                     </div>
                     <div class="service-description">
-                        <p class="text">Transport of hazardous or chemical materials.</p>
-                        <a href="#" class="text">
-                            <img src="../icons/flecha.png">
+                        <p class="text description-text">Transport of hazardous or chemical materials.</p>
+                        <a href="en/divisions/iso-tanks.html" class="text">
+                            <img src="/icons/flecha.png">
+                            See More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-container animup initial-opacity-transition">
+                    <img class="service-icon-container" src="/icons/service.png">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon import-icon" src="/icons/iconImport.png" alt="Import/Export">
+                    <div class="service-title">
+                        <h4>IMPORT/EXPORT</h4>
+                    </div>
+                    <div class="service-description">
+                        <p class="text description-text">Transport of assets, steel, aluminum, and various materials.</p>
+                        <a href="en/divisions/export.html" class="text">
+                            <img src="/icons/flecha.png">
+                            See More
+                        </a>
+                        <div class="import-flags">
+                            <img src="icons/mx.png" alt="switch to Spanish">
+                            <img src="icons/usa.png" alt="switch to English">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="service-container animup initial-opacity-transition">
+                    <img class="service-icon-container" src="/icons/service.png">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon madrinas-icon" src="/icons/iconMadrina.png" alt="Car Carriers">
+                    <div class="service-title">
+                        <h4>CAR CARRIERS</h4>
+                    </div>
+                    <div class="service-description">
+                        <p class="text description-text">Ideal for transporting from 4 to 11 cars per shipment.</p>
+                        <a href="en/divisions/car-carriers.html" class="text">
+                            <img src="/icons/flecha.png">
+                            See More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-container animup initial-opacity-transition">
+                    <img class="service-icon-container" src="/icons/service.png">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon encortinadas-icon" src="/icons/iconEncort.png" alt="Curtain Siders">
+                    <div class="service-title">
+                        <h4>CURTAIN SIDERS</h4>
+                    </div>
+                    <div class="service-description">
+                        <p class="text description-text">Transport of dry goods, such as soft drinks, auto parts, beer, and canned goods.</p>
+                        <a href="en/divisions/curtain-siders.html" class="text">
+                            <img src="/icons/flecha.png">
                             See More
                         </a>
                     </div>
@@ -223,7 +334,7 @@
         </div>
     </section>
 
-       <section class="about-container">
+    <section class="about-container">
         <div class="about-header">
             <h2 class="about-title title title-decoration">
                 TICARSA DNA
@@ -233,49 +344,49 @@
             </p>
         </div>
         <div class="about-body">
-            <div class="about-img-container">
+            <div class="about-img-container animup initial-opacity-transition">
                 <img class="about-img" src="/icons/bannerOPN.png" alt="Operators Banner">
                 <img class="about-img-mobile" src="/icons/bannerOPNcel.png" alt="Operators Banner">
                 <div class="inner-about">
                     <h2 class="inner-about-title title">TOP-LEVEL OPERATORS</h2>
                     <p class="inner-about-text text">JOIN THE BEST TEAM OF OPERATORS <br>and enjoy all the benefits</p>
-                    <a class="about-button" href="en/job-openings.html">
+                    <a class="about-button" href="en/job-openings.html#wheel-operator">
                         <img src="/icons/flecha.png">
                         See More
                     </a>
                 </div>
             </div>
-            <div class="about-img-container">
+            <div class="about-img-container animup initial-opacity-transition">
                 <img class="about-img" src="icons/bannerEscuela.png" alt="School Banner">
                 <img class="about-img-mobile" src="icons/bannerEscuelaCel.png" alt="School Banner">
                 <div class="inner-about">
                     <h2 class="inner-about-title title">OPERATOR SCHOOL</h2>
-                    <a class="about-button" href="en/job-openings.html">
+                    <a class="about-button" href="en/job-openings.html#operator-school">
                         <img src="/icons/flecha.png">
                         See More
                     </a>
                 </div>
             </div>
-            <div class="about-img-container">
+            <div class="about-img-container animup initial-opacity-transition">
                 <img class="about-img" src="icons/bannerAmbiente.png" alt="Environment Banner">
                 <img class="about-img-mobile" src="icons/bannerAmbienteCel.png" alt="Environment Banner">
                 <div class="inner-about en-inner-about">
                     <h2 class="inner-about-title title">
                         COMMITMENT TO THE PLANET
                     </h2>
-                    <a class="about-button" href="en/company.html">
+                    <a class="about-button" href="en/company.html#ambient">
                         <img src="/icons/flecha.png">
                         See More
                     </a>
                 </div>
             </div>
-            <div class="about-img-container">
+            <div class="about-img-container animup initial-opacity-transition">
                 <img class="about-img" src="icons/bannerProf.png" alt="Professionals Banner">
                 <img class="about-img-mobile" src="icons/bannerProfCel.png" alt="Professionals Banner">
                 <div class="inner-about">
                     <h2 class="inner-about-title title">TRAINED PROFESSIONALS</h2>
                     <p class="inner-about-text text">We have a continuous training program for all our staff.</p>
-                    <a class="about-button" href="en/job-openings.html">
+                    <a class="about-button" href="en/company.html#profesional">
                         <img src="/icons/flecha.png">
                         See More
                     </a>
@@ -283,6 +394,7 @@
             </div>
         </div>
     </section>
+
     <div class="clients-container">
         <div class="clients-header">
             <h2 class="clients-title title title-decoration">
@@ -292,37 +404,40 @@
                 The recommendation of our clients is our greatest satisfaction.
             </p>
         </div>
+
         <div class="clients-logo-container">
-            <img src="icons/logo-clients/Grupo 1.png" alt="">
-            <img src="icons/logo-clients/Grupo 2.png" alt="">
-            <img src="icons/logo-clients/Grupo 3.png" alt="">
-            <img src="icons/logo-clients/Grupo 4.png" alt="">
-            <img src="icons/logo-clients/Grupo 5.png" alt="">
-            <img src="icons/logo-clients/Grupo 6.png" alt="">
-            <img src="icons/logo-clients/Grupo 7.png" alt="">
-            <img src="icons/logo-clients/Grupo 8.png" alt="">
-            <img src="icons/logo-clients/Grupo 9.png" alt="">
-            <img src="icons/logo-clients/Grupo 10.png" alt="">
-            <img src="icons/logo-clients/Grupo 11.png" alt="">
-            <img src="icons/logo-clients/Grupo 12.png" alt="">
-            <img src="icons/logo-clients/Grupo 13.png" alt="">
-            <img src="icons/logo-clients/Grupo 14.png" alt="">
-            <img src="icons/logo-clients/Grupo 15.png" alt="">
-            <img src="icons/logo-clients/Grupo 16.png" alt="">
-            <img src="icons/logo-clients/Grupo 17.png" alt="">
-            <img src="icons/logo-clients/Grupo 18.png" alt="">
-            <img src="icons/logo-clients/Grupo 19.png" alt="">
-            <img src="icons/logo-clients/Grupo 20.png" alt="">
-            <img src="icons/logo-clients/Grupo 21.png" alt="">
-            <img src="icons/logo-clients/Grupo 22.png" alt="">
-            <img src="icons/logo-clients/Grupo 23.png" alt="">
-            <img src="icons/logo-clients/Grupo 24.png" alt="">
-            <img src="icons/logo-clients/Grupo 25.png" alt="">
-            <img src="icons/logo-clients/Grupo 26.png" alt="">
-            <img src="icons/logo-clients/Grupo 27.png" alt="">
-            <img src="icons/logo-clients/Grupo 28.png" alt="">
-            <img src="icons/logo-clients/Grupo 29.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 1.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 2.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 3.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 4.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 5.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 6.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 7.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 8.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 9.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 10.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 11.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 12.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 13.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 14.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 15.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 16.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 17.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 18.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 19.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 20.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 21.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 22.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 23.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 24.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 25.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 26.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 27.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 28.png" alt="">
+            <img class="animup initial-opacity-transition" src="icons/logo-clients/Grupo 29.png" alt="">
         </div>
+    </div>
+
 
     <div class="coverage-container">
         <div class="map-img">
@@ -479,7 +594,8 @@
             <img class="logo-img" src="/icons/logoTwhite.png" alt="Ticarsa logo">
         </footer>
     </section>
-    <script src="en.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 </body>
 
 </html>
