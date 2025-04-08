@@ -254,6 +254,7 @@ body {
         left: 0 !important;
         clip-path: none !important;
         top: 0 !important;
+        margin-bottom: -1vw;
     }
 
     .videoWeb{
@@ -1511,6 +1512,11 @@ body {
 
     .index-buttons-container{
         display: none !important;
+    }
+
+    .import-flags {
+        bottom: -19vw !important;
+        left: 17vw !important;
     }
 
 }
