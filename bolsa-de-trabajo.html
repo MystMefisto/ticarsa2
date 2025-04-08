@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bolsa de trabajo</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "a501cBZ0H6CpUunpO",
+  });
+})();
+</script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -12,32 +22,6 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="info-container">
-                Tels. &nbsp;
-                <a href="tel:8282824010" class="phone-number-1">828 282 4010</a>
-                <a href="tel:8288247110" class="phone-number-2">828 824 7110</a>
-                <a href="mailto:contacto@ticarsa.com.mx" class="email">contacto@ticarsa.com.mx</a>
-            </div>
-
-            <div class="rss-container">
-                <a href="https://www.facebook.com/ticarsa" class="rss-img">
-                    <img src="icons/fb2.png" alt="facebook">
-                </a>
-                <a href="https://www.instagram.com/ticarsamx/" class="rss-img">
-                    <img src="icons/ins2.png" alt="instagram">
-                </a>
-                <a href="https://www.youtube.com/@ticarsaoficial" class="rss-img">
-                    <img src="icons/you2.png" alt="youtube">
-                </a>
-                <a href="https://www.tiktok.com/@ticarsaoficial" class="rss-img">
-                    <img src="icons/tik2.png" alt="tiktok">
-                </a>
-                <a href="https://www.linkedin.com/company/ticarsa" class="rss-img">
-                    <img src="icons/in2.png" alt="linkedin">
-                </a>
-            </div>
-        </div>
         <nav class="nav-bar">
             <a href="index.html">
                 <img class="logo-img" src="/icons/logoT.png" alt="logo Ticarsa">
@@ -106,64 +90,212 @@
         </nav>
     </header>
 
-    <section class="bolsa-container line-decoration-bolsa">
-        <img src="/icons/bolsa.png" alt="" class="presentation-img bolsa-img animate__animated animate__fadeInUp">
-        <img src="/icons/bolsaCel.png" alt="" class="presentation-img bolsa-img-mobile-top animate__animated animate__fadeInUp">
-        <div class="bolsa-description">
-            <h2 class="bolsa-title title title-decoration animate__animated animate__fadeInUp">
-                BOLSA DE TRABAJO
+    <section class="about-presentation-container bolsa-presentation-container">
+        <img src="/icons/bolsa2/bolsaDesk.jpg" alt="" class="about-presentation-img">
+        <img src="/icons/bolsa2/bolsaCel.jpg" alt="" class="bolsa-presentation-img-mobile">
+        <div class="about-presentation-description mobile-hidden">
+            <h2 class="about-presentation-title title title-decoration animate__animated animate__fadeInUp">
+                ÚNETE A LOS ROJOS
             </h2>
-            <p class="bolsa-text text  animate__animated animate__fadeInUp">Se parte del mejor equipo de transporte de carga y disfruta
-            de todos sus beneficios en desarrollo profesional y económico. <br> <br>
-            Postúlate a la vacante de tu interés:</p>
-
-            <div class="button-container animate__animated animate__fadeInUp">
-                <a class="bolsa-button scroll-btn" href="#operator-school">
-                    <img src="/icons/flechaR.png">
-                    Operadores
-                </a>
-                <a class="bolsa-button scroll-btn" href="#admin">
-                    <img src="/icons/flechaR.png">
-                    Administrativo
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="bolsa-container line-decoration-bolsa" id="wheel-operator">
-        <img src="/icons/opera.png" alt="" class="presentation-img bolsa-img animup initial-opacity-transition">
-        <img src="/icons/operaCel.png" alt="" class="presentation-img bolsa-img-mobile animup initial-opacity-transition">
-        <div class="bolsa-description">
-            <h2 class="bolsa-title title title-decoration animup initial-opacity-transition">
-                OPERADORES QUINTA RUEDA
-            </h2>
-            <p class="bolsa-text text  animup initial-opacity-transition">Únete al mejor equipo de transporte de carga y forma parte
-                de la élite de operadores de primer nivel de México y disfruta de grandes beneficios para ti
-                y tu familia.</p>
-
-            <ul class="bolsa-list text animup initial-opacity-transition">
-                <li>Unidades modernas y con la mejor tecnologia.</li>
-                <li>Sueldos y prestaciones muy atractivas.</li>
-                <li>Apoyos y becas en educación.</li>
-                <li>Bonos por cumplimiento y recomendación.</li>
-                <li>Actividad de apoyo a familiares.</li>
-            </ul>
-
-            <a class="bolsa-button bolsa-button-mobile animup initial-opacity-transition" href="https://wa.me/528119085976">
+            <p class="text bolsa-text animate__animated animate__fadeInUp">
+                Forma parte del mejor equipo de operadores de transporte de carga de todo México y disfruta de sus beneficios personales y profesionales.
+            </p>
+            <a class="bolsa-button scroll-btn" href="#services">
                 <img src="/icons/flecha.png">
-                Whatsapp
+                Aplicar
             </a>
         </div>
     </section>
 
-    <section class="bolsa-container line-decoration-bolsa" id="operator-school">
+    <div class="division-description bolsa-division desktop-hidden">
+        <h2 class="division-title title title-decoration animate__animated animate__fadeInUp">
+            ÚNETE A LOS ROJOS
+        </h2>
+
+        <div class="division-buttons-container">
+            <a class="division-button scroll-btn" href="#security">
+                <img src="../icons/flecha.png">
+                Ver Más
+            </a>
+            <a class="bolsa-button scroll-btn" href="#contact">
+                <img src="../icons/flecha.png">
+                Aplicar
+            </a>
+        </div>
+    </div>
+
+    <section class="bolsa-icons-container">
+        <p class="text desktop-hidden">
+            Forma parte del mejor equipo de operadores de transporte de carga de todo México y disfruta de sus beneficios personales y profesionales.
+        </p>
+        <div class="benefit-container">
+            <div class="benefit-img-container">
+                <img src="/icons/bolsa2/bon1.png" alt="" class="benefit-img animup initial-opacity-transition">
+            </div>
+            <div class="benefit-description-container">
+                <h3 class="title">
+                    SUELDO MENSUAL DE HASTA
+                </h3>
+                <div class="price">
+                    <h2 class="title">
+                        $40,000
+                    </h2>
+                    <span class="title">
+                        MXN
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="benefit-container">
+            <div class="benefit-img-container">
+                <img src="/icons/bolsa2/bon2.png" alt="" class="benefit-img animup initial-opacity-transition">
+            </div>
+            <div class="benefit-description-container">
+                <h3 class="title">
+                    BONO DE PERMANENCIA
+                </h3>
+                <div class="price">
+                    <h2 class="title">
+                        $30,000
+                    </h2>
+                    <span class="title">
+                        MXN
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="benefit-container">
+            <div class="benefit-img-container">
+                <img src="/icons/bolsa2/bon3.png" alt="" class="benefit-img animup initial-opacity-transition">
+            </div>
+            <div class="benefit-description-container">
+                <h3 class="title">
+                    BONO POR RECOMENDAR
+                </h3>
+                <div class="price">
+                    <h2 class="title">
+                        $5,000
+                    </h2>
+                    <span class="title">
+                        MXN
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-table-container mobile-hidden">
+        <ul>
+            <li class="text">AGUINALDO</li>
+            <li class="text">APOYOS ECONÓMICOS</li>
+            <li class="text">CAPACITACIÓN GRATIS</li>
+            <li class="text">VACACIONES</li>
+        </ul>
+        <ul>
+            <li class="text">UTILIDADES</li>
+            <li class="text">INFONAVIT</li>
+            <li class="text">UNIFORMES</li>
+            <li class="text">VALES DE DESPENSA</li>
+        </ul>
+        <ul>
+            <li class="text">SEGUROS DE VIDA</li>
+            <li class="text">SEGURO VIAL</li>
+            <li class="text">CUIDADO DE SALUD</li>
+            <li class="text">PROGRAMAS FAMILIARES</li>
+        </ul>
+    </section>
+
+    <section class="benefits-table-container-mobile desktop-hidden">
+        <ul>
+            <li class="text">AGUINALDO</li>
+            <li class="text">UTILIDADES</li>
+            <li class="text">SEGURO DE VIDA</li>
+            <li class="text">CAPACITACIÓN GRATIS</li>
+            <li class="text">UNIFORMES</li>
+            <li class="text">CUIDADO DE SALUD</li>
+        </ul>
+        <ul>
+            <li class="text">APOYOS ECONÓMICOS</li>
+            <li class="text">INFONAVIT</li>
+            <li class="text">SEGURIDAD VIAL</li>
+            <li class="text">VACACIONES</li>
+            <li class="text">VALES DE DESPENSA</li>
+            <li class="text">PROGRAMAS FAMILIARES</li>
+        </ul>
+    </section>
+
+    <section class="requirement-container">
+        <div class="requirement-header">
+            <h2 class="title requirement-title title-decoration">
+                REQUISITOS DE OPERADORES
+            </h2>
+            <p class="text">
+                Postúlate ahora y forma parte de nuestro equipo.
+            </p>
+            <a class="requirement-button scroll-btn" href="#services">
+                <img src="/icons/flecha.png">
+                Aplicar
+            </a>
+        </div>
+        <div class="requirement-body">
+            <div class="requirement-element">
+                <img src="/icons/bolsa2/iconExp.png" alt="">
+                <p class="text">
+                    Experiencia comprobable
+                </p>
+            </div>
+            <div class="requirement-element">
+                <img src="/icons/bolsa2/iconLicencia.png" alt="">
+                <p class="text">
+                    Licencia Federal
+                </p>
+            </div>
+            <div class="requirement-element">
+                <img src="/icons/bolsa2/iconApto.png" alt="">
+                <p class="text">
+                    APTO Médico
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="social-responsability-container">
+
+        <div class="inner-social-responsability-container">
+            <div class="social-responsability-header">
+                <h2 class="social-responsability-title title title-decoration">
+                    RESPONSABILIDAD SOCIAL
+                </h2>
+                <div class="values-container">
+                    <p class="value text">FAMILIA</p>
+                    <p class="value text">COMUNIDAD</p>
+                    <p class="value text">MEDIO AMBIENTE</p>
+                    <p class="value text">BIENESTAR</p>
+                </div>
+            </div>
+            <p class="value-description text">Somos una empresa que busca siempre un bienestar integral de todos nuestros colaboradores. 
+                Tanto dentro como fuera de nuestras instalaciones apoyamos a través de programas a nuestra comunidad, empleados, familias 
+                y sociedad en general para su desarrollo.
+            </p>
+            <div class="social-responsability-body">
+                <img src="icons/1.png" alt="" class="animup initial-opacity-transition">
+                <img src="icons/2.png" alt="" class="animup initial-opacity-transition">
+                <img src="icons/3.png" alt="" class="animup initial-opacity-transition">
+                <img src="icons/4.png" alt="" class="animup initial-opacity-transition">
+                <img src="icons/5.png" alt="" class="animup initial-opacity-transition">
+                <img src="icons/6.png" alt="" class="animup initial-opacity-transition">
+            </div>
+        </div>
+    </section>
+
+    <section class="bolsa-container" id="operator-school">
         <img src="/icons/bolsaopera.png" alt="" class="presentation-img bolsa-img animup initial-opacity-transition">
         <img src="/icons/bolsaoperaCel.png" alt="" class="presentation-img bolsa-img-mobile animup initial-opacity-transition">
         <div class="bolsa-description">
             <h2 class="bolsa-title title title-decoration animup initial-opacity-transition">
                 ESCUELA DE OPERADORES
             </h2>
-            <p class="bolsa-text text animup initial-opacity-transition">
+            <p class="job-text text animup initial-opacity-transition">
                 Gracias a nuestra alianza con ICET brindamos becas para la formación de operadores 
                 quinta rueda profesionales. <br>
                 Capacitaciones con las mejores herramientas y tecnología.
@@ -197,21 +329,21 @@
             </div>
             
 
-            <a class="bolsa-button bolsa-button-mobile animup initial-opacity-transition" href="https://wa.me/528119085976">
+            <a class="job-button bolsa-button-mobile animup initial-opacity-transition" href="https://wa.me/528119085976">
                 <img src="/icons/flecha.png">
                 Whatsapp
             </a>
         </div>
     </section>
 
-    <section class="bolsa-container line-decoration-bolsa" id="admin">
+    <section class="bolsa-container" id="admin">
         <img src="/icons/admin.png" alt="" class="presentation-img bolsa-img animup initial-opacity-transition">
         <img src="/icons/adminCel.png" alt="" class="presentation-img bolsa-img-mobile animup initial-opacity-transition">
         <div class="bolsa-description">
             <h2 class="bolsa-title title title-decoration animup initial-opacity-transition">
                 EQUIPO ADMINISTRATIVO
             </h2>
-            <p class="bolsa-text text animup initial-opacity-transition">Excelente ambiente laboral flexible y agradable para el crecimiento
+            <p class="job-text text animup initial-opacity-transition">Excelente ambiente laboral flexible y agradable para el crecimiento
                 profesional en cualquier tipo de carrera.</p>
             
             <ul class="bolsa-list text animup initial-opacity-transition">
@@ -222,41 +354,10 @@
                 <li>Instalaciones y equipo moderno de trabajo</li>
             </ul>
 
-            <a class="bolsa-button bolsa-button-mobile animup initial-opacity-transition" href="https://wa.me/528119085976">
+            <a class="job-button bolsa-button-mobile animup initial-opacity-transition" href="https://wa.me/528119085976">
                 <img src="/icons/flecha.png">
                 Whatsapp
             </a>
-        </div>
-    </section>
-
-
-    
-    <section class="social-responsability-container">
-
-        <div class="inner-social-responsability-container">
-            <div class="social-responsability-header">
-                <h2 class="social-responsability-title title title-decoration">
-                    RESPONSABILIDAD SOCIAL
-                </h2>
-                <div class="values-container">
-                    <p class="value text">FAMILIA</p>
-                    <p class="value text">COMUNIDAD</p>
-                    <p class="value text">MEDIO AMBIENTE</p>
-                    <p class="value text">BIENESTAR</p>
-                </div>
-            </div>
-            <p class="value-description text">Somos una empresa que busca siempre un bienestar integral de todos nuestros colaboradores. 
-                Tanto dentro como fuera de nuestras instalaciones apoyamos a través de programas a nuestra comunidad, empleados, familias 
-                y sociedad en general para su desarrollo.
-            </p>
-            <div class="social-responsability-body">
-                <img src="icons/1.png" alt="" class="animup initial-opacity-transition">
-                <img src="icons/2.png" alt="" class="animup initial-opacity-transition">
-                <img src="icons/3.png" alt="" class="animup initial-opacity-transition">
-                <img src="icons/4.png" alt="" class="animup initial-opacity-transition">
-                <img src="icons/5.png" alt="" class="animup initial-opacity-transition">
-                <img src="icons/6.png" alt="" class="animup initial-opacity-transition">
-            </div>
         </div>
     </section>
 
@@ -269,10 +370,8 @@
                 <form action="" method="post">
                     <input type="text" placeholder="Nombre" name="nombre" id="">
                     <input type="tel" placeholder="Teléfono" name="telefono" id="">
-                    <input type="email" placeholder="Correo" name="correo" id="">
                     <input type="text" placeholder="Ciudad" name="ciudad" id="">
-                    <input type="text" placeholder="Servicio de interés" name="servicio" id="">
-                    <textarea placeholder="Mensaje" name="mensaje" id=""></textarea>
+                    <input type="text" placeholder="Puesto de interés" name="vacante" id="">
                     <button type="submit"><img src="/icons/flechaR.png">ENVIAR</button>
                 </form>
             </div>

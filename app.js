@@ -1,3 +1,5 @@
+const form = document.querySelector('form');
+const formButton = document.querySelector('form button');
 
 //Generating on scroll animations
 document.addEventListener('DOMContentLoaded', function() {
@@ -62,3 +64,76 @@ window.addEventListener('resize', function() {
         video.play(); // Start playing the video
     }
 });
+
+function sendEmail(){
+    const email = {
+        name: form.querySelector('input[name="nombre"]').value,
+        phone: form.querySelector('input[name="telefono"]').value,
+        email: form.querySelector('input[name="correo"]').value,
+        city: form.querySelector('input[name="ciudad"]').value,
+        time: actualDate(),
+        service: form.querySelector('input[name="servicio"]').value,
+        message: form.querySelector('textarea[name="mensaje"]').value,
+    }
+
+    try {        
+        emailjs.send("service_jog4uep","template_rsdtvun",{
+            name: email.name,
+            city: email.city,
+            service: email.service,
+            message: email.message,
+            time: email.time,
+            phone: email.phone,
+            email: email.email,
+            });
+    } catch (e) {
+        console.log(e);        
+        console.log(email);
+    }
+}
+
+function sendVacantMail(){
+    const email = {
+        name: form.querySelector('input[name="nombre"]').value,
+        phone: form.querySelector('input[name="telefono"]').value,
+        city: form.querySelector('input[name="ciudad"]').value,
+        time: actualDate(),
+        vacant: form.querySelector('input[name="vacante"]').value,
+    }
+
+    try {        
+        emailjs.send("service_jog4uep","template_x5eh36i",{
+            name: email.name,
+            city: email.city,
+            vacant: email.vacant,
+            time: email.time,
+            phone: email.phone,
+            });
+    } catch (e) {
+        console.log(e);        
+        console.log(email);
+    }
+
+}
+
+function actualDate(){
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    
+    // Añadir cero inicial si los minutos son menos de 10
+    const minutosFormateados = minutes < 10 ? '0' + minutes : minutes;
+    
+    // Formato 24 horas
+    return `${hours}:${minutosFormateados}`;
+}
+
+
+formButton.addEventListener('click', function(e){
+    e.preventDefault();
+    sendEmail();
+    setTimeout(() => {
+        window.location.reload(true);
+    }, 500);
+});
+

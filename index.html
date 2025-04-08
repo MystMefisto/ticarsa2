@@ -5,38 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticarsa</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "a501cBZ0H6CpUunpO",
+      });
+   })();
+</script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <header>
-        <div class="header-container">
-            <div class="info-container">
-                Tels. &nbsp;
-                <a href="tel:8282824010" class="phone-number-1">828 282 4010</a>
-                <a href="tel:8288247110" class="phone-number-2">828 824 7110</a>
-                <a href="mailto:contacto@ticarsa.com.mx" class="email">contacto@ticarsa.com.mx</a>
-            </div>
-
-            <div class="rss-container">
-                <a href="https://www.facebook.com/ticarsa" class="rss-img">
-                    <img src="icons/fb2.png" alt="facebook">
-                </a>
-                <a href="https://www.instagram.com/ticarsamx/" class="rss-img">
-                    <img src="icons/ins2.png" alt="instagram">
-                </a>
-                <a href="https://www.youtube.com/@ticarsaoficial" class="rss-img">
-                    <img src="icons/you2.png" alt="youtube">
-                </a>
-                <a href="https://www.tiktok.com/@ticarsaoficial" class="rss-img">
-                    <img src="icons/tik2.png" alt="tiktok">
-                </a>
-                <a href="https://www.linkedin.com/company/ticarsa" class="rss-img">
-                    <img src="icons/in2.png" alt="linkedin">
-                </a>
-            </div>
-        </div>
         <nav class="nav-bar">
             <a href="#">
                 <img class="logo-img" src="/icons/logoT.png" alt="logo Ticarsa">
@@ -105,15 +89,19 @@
         </nav>
     </header>
 
-
-
+    <div id="modal1" class="modalmask">
+        <div class="modalbox movedown">
+            <a href="#close" title="Close" class="close">X</a>
+            <video controls="" src="/icons/Video-Ticarsa-Full.mp4"></video>
+        </div>
+    </div>
     <section class="presentation-container animup initial-opacity-transition">
-            <div class="presentation-video-container presentation-img-visibility animup initial-opacity-transition">
-                <video class="videoWeb" autoplay muted loop>
-                    <source src="/icons/VideoWebTicarsa.mp4" type="video/mp4">
+        <div class="presentation-video-container presentation-img-visibility animup initial-opacity-transition">
+            <video class="videoWeb" autoplay muted loop>
+                    <source src="/icons/VideoCover.mp4" type="video/mp4">
                 </video>
                 <video class="videoPhone" autoplay muted loop>
-                    <source src="/icons/VideoWebTicarsaCEL.mp4" type="video/mp4">
+                    <source src="/icons/VideoCover.mp4" type="video/mp4">
                 </video>
             </div>
         <div class="presentation-description animup initial-opacity-transition">
@@ -122,10 +110,16 @@
             </h2>
             <p class="presentation-text text">+50 años de experiencia nos respaldan como <br> tu mejor opción en el
                 transporte de carga.</p>
-            <a class="presentation-button scroll-btn" href="#services">
-                <img src="/icons/flecha.png">
-                Ver Más
-            </a>
+                <div class="index-buttons-container">
+                    <a class="index-button" href="#modal1">
+                        <img src="../icons/flecha.png">
+                        Ver vídeo
+                    </a>
+                    <a class="index-button scroll-btn" href="#contact">
+                        <img src="../icons/flecha.png">
+                        Ver Más
+                    </a>
+                </div>
         </div>
         <div class="presentation-menu-container">
             <a href="#" class="presentation-menu-button">
@@ -216,8 +210,6 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="list-container second-list-container">
                 <div class="service-container animup initial-opacity-transition">
                     <img class="service-icon-container" src="/icons/service.png">
                     <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
@@ -234,7 +226,27 @@
                     </div>
                 </div>
 
-                <div class="service-container animup initial-opacity-transition">
+                <div id="tolva-responsive-1" class="service-container animup initial-opacity-transition">
+                    <img class="service-icon-container" src="/icons/service.png">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon tolva-presurizada-icon" src="/icons/iconTolvaPres.png"
+                        alt="Tolvas Presurizadas">
+                    <div class="service-title">
+                        <h4>TOLVAS PRESURIZADAS</h4>
+                    </div>
+                    <div class="service-description">
+                        <p class="text description-text">Transporte de materiales peligrosos ó químicos.</p>
+                        <a href="divisiones/tolvas-presurizadas.html" class="text">
+                            <img src="/icons/flecha.png">
+                            Ver Más
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="list-container second-list-container">
+
+                <div id="tolva-responsive-2" class="service-container animup initial-opacity-transition">
                     <img class="service-icon-container" src="/icons/service.png">
                     <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
                     <img class="service-icon tolva-presurizada-icon" src="/icons/iconTolvaPres.png"
@@ -275,8 +287,44 @@
                         <h4>IMPORT/EXPORT</h4>
                     </div>
                     <div class="service-description">
-                        <p class="text description-text">Transporte de activos entre México y Estados Unidos.</p>
+                        <p class="text description-text">Transporte de activos acero, aluminio y diversos materiales.</p>
                         <a href="/divisiones/export.html" class="text">
+                            <img src="/icons/flecha.png">
+                            Ver Más
+                        </a>
+                        <div class="import-flags">
+                            <img src="icons/mx.png" alt="cambiar a español">
+                            <img src="icons/usa.png" alt="cambiar a inglés">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="service-container animup initial-opacity-transition">
+                    <img class="service-icon-container" src="/icons/service.png">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon madrinas-icon" src="/icons/iconMadrina.png" alt="madrinas">
+                    <div class="service-title">
+                        <h4>MADRINAS</h4>
+                    </div>
+                    <div class="service-description">
+                        <p class="text description-text">Ideal para transporte desde 4 hasta 11 carros por traslado.</p>
+                        <a href="/divisiones/madrinas.html" class="text">
+                            <img src="/icons/flecha.png">
+                            Ver Más
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-container animup initial-opacity-transition">
+                    <img class="service-icon-container" src="/icons/service.png">
+                    <img src="/icons/serviceResponsive.png" class="service-icon-container-responsive">
+                    <img class="service-icon encortinadas-icon" src="/icons/iconEncort.png" alt="encortinadas">
+                    <div class="service-title">
+                        <h4>ENCORTINADAS</h4>
+                    </div>
+                    <div class="service-description">
+                        <p class="text description-text">Transporte de mercancías secas, como refrescos, autopartes, cerveza y enlatados.</p>
+                        <a href="/divisiones/encortinadas.html" class="text">
                             <img src="/icons/flecha.png">
                             Ver Más
                         </a>
@@ -509,7 +557,11 @@
                         <a href="tel:8282824010" class="text">828 282 4010 /</a>
                         <a href="tel:8288247110" class="text"> 828 824 7110</a>
                     </div>
-                    <a class="icons-img" href="https://wa.me/528119085976"><img src="icons/wa.png" alt="">81 1908 5976</a>
+                    <div class="icons-img" href="#"><img src="icons/wa.png" alt="">
+                        <a class="text" href="https://wa.me/528282824010">828 282 4010 /</a>
+                        <a class="text" href="https://wa.me/528288247110"> 828 824 7110 </a>
+                        <a class="text" href="https://wa.me/528119085976">81 1908 5976</a>
+                    </div>
                     <a class="icons-img" href="mailto:contacto@ticarsa.com.mx"><img src="icons/mail.png" alt="">contacto@ticarsa.com.mx</a>
                     <a class="icons-img" href="https://maps.app.goo.gl/sQifUYBKEu8UiV9c7"><img src="icons/ubic.png" alt="">Autopista Cadereyta a Reynosa Km 36.5 Cadedreyra Jiménez N.L. C.P. 67483</a>
                 </div>

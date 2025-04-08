@@ -400,18 +400,37 @@ body {
     }
 
     .import-icon {
-        width: 26vw !important;
+        width: 30vw !important;
         height: auto !important;
-        padding-top: 1.5vw !important;
+        padding-top: 4.5vw !important;
     }
 
     .tolva-alimento-icon {
-        height: 8vw !important;
-        padding: 4.4vw 6.8vw !important;
+        height: 9vw !important;
+        padding: 4.4vw 6.2vw !important;
     }
 
     .tolva-presurizada-icon {
         padding: 4.7vw 3.15vw !important;
+    }
+
+    #tolva-responsive-2{
+        display: none !important;
+    }
+
+    #tolva-responsive-1{
+        display: flex !important;
+    }
+
+    .madrinas-icon {
+        width: 24vw !important;
+        height: 10vw !important;
+        padding: 4.7vw 6.8vw !important;
+    }
+
+    .autotanque-icon {
+        width: 26vw !important;
+        height: 9vw !important;
     }
 
     .service-title {
@@ -424,7 +443,7 @@ body {
     .service-container a {
         font-size: 2.6vw !important;
         width: 30vw !important;
-        top: 14.4vw !important;
+        top: 16vw !important;
         gap: .6vw !important;
     }
 
@@ -941,6 +960,10 @@ body {
         gap: 1vw 6vw !important;
     }
 
+    .bolsa-division{
+        display: block !important;
+    }
+
     .division-container {
         margin-left: 0 !important;
         padding-bottom: 13vw !important;
@@ -987,6 +1010,33 @@ body {
     }
 
     .division-button img {
+        height: 3vw !important;
+    }
+
+    .bolsa-division{
+        padding: 4vw 0 !important;
+    }
+
+    .bolsa-division h2::before{
+        color:var(--color-yellow)
+    }
+
+    .bolsa-division{
+        background-color: #232323 !important;
+    }
+
+    .bolsa-button {
+        position: absolute !important;
+        top: 3vw !important;
+        left: 70vw !important;
+        font-size: 3vw !important;
+        background-color: var(--color-red) !important;
+        width: 22vw !important;
+        height: 6vw !important;
+        gap: 1vw !important;
+    }
+
+    .bolsa-button img {
         height: 3vw !important;
     }
 
@@ -1134,8 +1184,19 @@ body {
         margin: 0 !important;
     }
 
+    .bolsa-presentation-img-mobile {
+        display: block !important;
+        width: 100% !important;
+        height: 60vw;
+        margin: 0 !important;
+    }
+
     .about-presentation-container {
         margin: 0 !important;
+    }
+
+    .bolsa-presentation-container{
+        height: 100% !important;
     }
 
     .experience-subtitle {
@@ -1340,6 +1401,122 @@ body {
         display: none !important;
     }
 
+    .mobile-hidden{
+        display: none !important;
+    }
+
+    .benefit-container {
+        border-radius: 1.5vw !important;
+        width: 76vw !important;
+        height: 21vw !important;
+    }
+    
+    .benefit-description-container {
+        padding-left: 4vw !important;
+    }
+    
+    .price h2 {
+        font-size: 11.2vw !important;
+        margin: 0 !important;
+    }
+    
+    .benefit-description-container > h3 {
+        margin: 2vw 0 -0.3vw 0 !important;
+        font-size: 4vw !important;
+        width: 56vw !important;
+    }
+    
+    .benefit-img-container img {
+        margin: 3.4vw !important;
+        width: 16vw !important;
+        height: auto !important;
+    }
+    
+    .price span {
+        font-size: 3.5vw !important;
+    }
+    
+    .benefit-img-container {
+        border-radius: 1.5vw 0 0 1.5vw !important;
+    }
+    
+    .bolsa-icons-container {
+        gap: 4vw !important;
+        padding-bottom: 6vw !important;
+        flex-direction: column !important;
+    }
+    
+    .bolsa-icons-container > p {
+        width: 78vw !important;
+        margin: 7vw 0 5vw 0 !important;
+    }
+
+    .desktop-hidden{
+        display: block !important;
+    }
+
+    .benefits-table-container-mobile {
+        display: flex !important;
+    }
+
+    .requirement-container {
+        flex-direction: column !important;
+        margin: 0 11vw 13vw 11vw !important;
+    }
+    
+    .requirement-button{
+            display:none !important;
+    }
+    
+    .requirement-body {
+        flex-wrap: wrap !important;
+    }
+    
+    .requirement-element img {
+        width: 14vw !important;
+    }
+
+    .requirement-element{
+        width: 35.5vw !important;
+    }
+    
+    .requirement-body {
+        gap: 7vw 3.5vw !important;
+    }
+    
+    .requirement-header p {
+        width: 83% !important;
+    }
+
+    .job-button img {
+        height: 3vw !important;
+    }
+
+    .job-text {
+        margin: 0;
+    }
+
+    .bolsa-container#operator-school {
+        margin-top: 12vw !important;
+        margin-bottom: 24vw !important;
+    }
+
+    .bolsa-container{
+        margin: 4vw 4vw 4vw auto !important;
+    }
+
+    .bolsa-container#admin {
+        margin-bottom: 28vw !important;
+    }
+
+    .index-buttons-container{
+        display: none !important;
+    }
+
+}
+
+.desktop-hidden{
+    display: none;
 }
 
 a,
@@ -1736,14 +1913,14 @@ a,
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 17.8vw;
+    width: 14vw;
     height: 18vw;
     backdrop-filter: none;
     border-radius: 1vw;
 }
 
 .service-icon-container {
-    height: 19vw;
+    height: 16vw;
 }
 
 .service-icon-container-responsive{
@@ -1758,10 +1935,10 @@ a,
 .service-title {
     font-family: 'akzidenzGroteskExtra';
     position: absolute;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     padding-left: 2vw;
     height: 3vw;
-    top: 8.6vw;
+    top: 7.4vw;
     align-content: center;
 }
 
@@ -1772,13 +1949,14 @@ a,
 .service-description {
     position: absolute;
     padding-left: 2vw;
-    top: 11vw;
+    top: 9.11vw;
 }
 
 .service-description p {
-    width: 85%;
-    line-height: 1.5vw;
-    font-size: .9vw;
+    width: 100%;
+    height: 3.4vw;
+    line-height: 1.2vw;
+    font-size: 0.7vw;
     font-weight: 400;
     color: white;
 }
@@ -1786,18 +1964,18 @@ a,
 .service-container a::before {
     content: "";
     position: absolute;
-    width: 13.8vw;
+    width: 10.8vw;
     height: .05vw;
     background-color: var(--color-strong-gray);
-    bottom: 1.9vw;
+    bottom: 1.5vw;
 }
 
 .service-container a {
     display: flex;
     gap: .3vw;
     position: absolute;
-    bottom: -1.7vw;
-    font-size: .9vw;
+    bottom: -1.3vw;
+    font-size: .8vw;
 }
 
 .service-container:hover a {
@@ -1816,30 +1994,40 @@ a,
 
 .service-icon {
     position: absolute;
-    height: 4vw;
+    height: 3vw;
     margin: auto;
     padding: 2.7vw;
 }
 
 .plat-icon {
-    height: 3.35vw;
-    padding: 3vw 1.9vw;
+    height: 2.95vw;
+    padding: 2.6vw 0.8vw;
 }
 
 .import-icon {
-    width: 13vw;
+    width: 11.4vw;
     height: auto;
-    padding-top: 1.5vw;
+    padding-top: 1.9vw;
+}
+
+.madrinas-icon {
+    height: auto;
+    width: 10vw;
+    margin: -0.9vw -0.9vw;
 }
 
 .tolva-alimento-icon {
-    height: 4.5vw;
-    padding: 2vw 3.2vw;
+    height: 4.1vw;
+    padding: 2vw 1.6vw;
+}
+
+#tolva-responsive-1{
+    display: none;
 }
 
 .autotanque-icon {
-    height: 4.5vw;
-    padding: 2vw 2.5vw;
+    height: 3.9vw;
+    padding: 2vw 1.4vw;
 }
 
 .tolva-presurizada-icon {
@@ -1847,7 +2035,7 @@ a,
 }
 
 .iso-tanque-icon {
-    height: 4.5vw;
+    height: 3.4vw;
     padding: 2vw 1.6vw;
 }
 
@@ -2271,7 +2459,13 @@ a,
     color: white;
 }
 
-.icons-img:first-of-type a{
+.icons-img:nth-of-type(1),
+.icons-img:nth-of-type(2) {
+    flex-wrap: wrap;
+}
+
+.icons-img:nth-of-type(1) a,
+.icons-img:nth-of-type(2) a{
     font-size: 1.15vw;
     color: white;
 }
@@ -2283,6 +2477,7 @@ a,
 
 .icons-img:nth-child(5) {
     font-size: 1vw;
+    flex-wrap: nowrap;
 }
 
 .icons-img img {
@@ -2484,6 +2679,22 @@ footer .logo-img {
     height: auto;
 }
 
+.bolsa-button {
+    display: flex;
+    color: white;
+    position: absolute;
+    font-size: .8vw;
+    background-color: var(--color-red);
+    height: 1.8vw;
+    gap: .2vw;
+    top: 14.4vw;
+    left: 2.7vw;
+    width: 7.1vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25vw;
+}
+
 .bolsa-img-mobile,
 .bolsa-img-mobile-top {
     display: none;
@@ -2492,9 +2703,12 @@ footer .logo-img {
 .bolsa-container {
     display: flex;
     position: relative;
-    margin: auto;
     border-radius: 8px;
-    margin-left: 4vw;
+    margin: 4vw 0 4vw 2.3vw;
+}
+
+.bolsa-container#admin {
+    margin-bottom: 8vw;
 }
 
 .bolsa-description {
@@ -2517,7 +2731,11 @@ footer .logo-img {
 }
 
 .bolsa-text {
-    color: var(--color-black);
+    position: absolute;
+    color: white;
+    top: 9vw;
+    left: 2.7vw;
+    width: 22vw;
 }
 
 .bolsa-list {
@@ -2629,6 +2847,10 @@ footer .logo-img {
 }
 
 .about-presentation-img-mobile {
+    display: none;
+}
+
+.bolsa-presentation-img-mobile {
     display: none;
 }
 
@@ -3272,6 +3494,24 @@ footer .logo-img {
     height: .95vw;
 }
 
+.bolsa-button {
+    display: flex;
+    color: white;
+    font-size: .8vw;
+    background-color: var(--color-red);
+    height: 1.9vw;
+    gap: .3vw;
+    width: 6.4vw;
+    margin-top: 2vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: .17vw;
+}
+
+.bolsa-button img {
+    height: .95vw;
+}
+
 .division-container::before {
     content: "";
     position: absolute;
@@ -3604,3 +3844,408 @@ button[type="submit"]:hover {
     z-index: -1;
 }
 
+.benefit-container {
+    display: flex;
+    width: 28vw;
+    height: 9vw;
+    margin: auto;
+    border-radius: 1.5vw;
+}
+
+.price {
+    display: flex;
+    gap: 0.5vw;
+    align-items: baseline;
+}
+
+.benefit-description-container {
+    color: white;
+    padding-left: 1vw;
+}
+
+.price h2 {
+    font-size: 3.4vw;
+    margin: 0;
+}
+
+.benefit-description-container > h3 {
+    font-size: 1.2vw;
+    margin: 1.3vw 0 -0.1vw 0;
+    width: 9vw;
+}
+
+.benefit-img-container img {
+    margin: 1.8vw;
+    width: 70%;
+    height: auto;
+}
+
+.price span {
+    font-size: 1.2vw;
+}
+
+.benefit-img-container {
+    border-radius: 1.5vw 0 0 1.5vw;
+    width: 34%;
+}
+
+.bolsa-icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.3vw;
+    margin: 2vw 10vw;
+}
+
+section.bolsa-icons-container > p {
+    width: 78vw;
+    margin: 7vw 0 5vw 0;
+}
+
+.benefit-container:nth-of-type(1){
+    background-color: var(--color-red);
+}
+
+.benefit-container:nth-of-type(2){
+    background-color: var(--color-yellow);
+}
+
+.benefit-container:nth-of-type(3){
+    background-color: var(--color-strong-gray);
+}
+
+.benefit-container:nth-of-type(1) .benefit-img-container{
+    background-color: #b9151a;
+}
+
+.benefit-container:nth-of-type(2) .benefit-img-container{
+    background-color: #aa8746;
+}
+
+.benefit-container:nth-of-type(3) .benefit-img-container{
+    background-color: #1d1d1d;
+}
+
+.benefits-table-container ul {
+    display: flex;
+    margin: 2.3vw 10vw;
+}
+
+.benefits-table-container ul:nth-of-type(1) {
+    gap: 11vw;
+}
+
+.benefits-table-container ul:nth-of-type(2) {
+    gap: 11.2vw;
+}
+
+.benefits-table-container ul:nth-of-type(3) {
+    gap: 8.1vw;
+}
+
+.benefits-table-container ul:nth-of-type(2) li:nth-of-type(3) {
+    margin-left: 5.35vw;
+}
+
+.benefits-table-container ul:nth-of-type(2) li:nth-of-type(4) {
+    margin-left: 5.1vw;
+}
+
+.benefits-table-container ul:nth-of-type(3) li:nth-of-type(3) {
+    margin-left: 7.3vw;
+}
+
+.benefits-table-container ul:nth-of-type(3) li:nth-of-type(4) {
+    margin-left: 4.3vw;
+}
+
+.benefits-table-container ul li::marker{
+    color: var(--color-red);
+}
+
+.benefits-table-container ul:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-gray);
+    width: 78.3vw;
+    height: 3vw;
+    z-index: -1;
+    left: 10.1vw;
+    top: 46.6vw;
+    border-radius:.6vw;
+}
+
+.benefits-table-container ul:nth-of-type(3)::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-gray);
+    width: 78.3vw;
+    height: 3vw;
+    z-index: -1;
+    left: 10.1vw;
+    top: 53.4vw;
+    border-radius:.6vw;
+}
+
+.benefits-table-container ul li{
+    font-weight: bold;
+}
+
+.benefits-table-container-mobile {
+    display: none ;
+}
+
+.benefits-table-container-mobile ul li {
+    font-size: 2.5vw !important;
+}
+
+.benefits-table-container-mobile ul {
+    margin: 0vw -2vw 9vw -2vw;
+}
+
+.benefits-table-container-mobile {
+    margin: 0 8vw;
+}
+
+.benefits-table-container-mobile ul li::marker {
+    color: var(--color-red);
+}
+
+.benefits-table-container-mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    margin-left: -0.6vw;
+}
+
+.benefits-table-container-mobile ul:nth-of-type(1) li:nth-of-type(1)::before {
+    z-index: -1;
+    content: "";
+    background-color: var(--color-gray);
+    width: 76vw;
+    height: 6vw;
+    position: absolute;
+    left: 12vw;
+    top: 205vw;
+    border-radius: 1vw;
+}
+
+.benefits-table-container-mobile ul:nth-of-type(1) li:nth-of-type(3)::before {
+    z-index: -1;
+    content: "";
+    background-color: var(--color-gray);
+    width: 76vw;
+    height: 6vw;
+    position: absolute;
+    display: block;
+    left: 12vw;
+    top: 218.7vw;
+    border-radius: 1vw;
+}
+
+.benefits-table-container-mobile ul:nth-of-type(1) li:nth-of-type(5)::before {
+    z-index: -1;
+    content: "";
+    background-color: var(--color-gray);
+    width: 76vw;
+    height: 6vw;
+    position: absolute;
+    display: block;
+    left: 12vw;
+    top: 232.3vw;
+    border-radius: 1vw;
+}
+
+.requirement-element p {
+    width: 6%;
+}
+
+.requirement-element {
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+}
+
+.requirement-element img {
+    height: auto;
+    width: 5vw;
+}
+
+.requirement-body {
+    display: flex;
+}
+
+.requirement-container {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    margin: 4vw 0 6vw 0;
+}
+
+.requirement-title {
+    color: var(--color-red);
+    margin-bottom: -0.4vw;
+}
+
+.requirement-title::before {
+    color: var(--color-yellow);
+}
+
+.requirement-button {
+    display: flex;
+    color: white;
+    font-size: .8vw;
+    background-color: var(--color-red);
+    height: 1.9vw;
+    gap: .3vw;
+    width: 6.4vw;
+    margin-top: 4vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: .17vw;
+}
+
+.requirement-button img {
+    height: .95vw;
+}
+
+.job-button {
+    display: flex;
+    color: white;
+    font-size: .8vw;
+    background-color: var(--color-red);
+    height: 1.9vw;
+    gap: .3vw;
+    width: 6.4vw;
+    margin-top: 2vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: .17vw;
+}
+
+.job-button img {
+    height: .95vw;
+}
+
+.index-buttons-container {
+    display: flex;
+    gap: 3vw;
+    position: relative;
+    top: 17vw;
+    left: 4vw;
+}
+
+.index-button img {
+    height: .95vw;
+}
+
+.index-button {
+    display: flex;
+    color: white;
+    font-size: .8vw;
+    background-color: var(--color-red);
+    height: 1.9vw;
+    gap: .3vw;
+    width: 6.4vw;
+    margin-top: 2vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: .17vw;
+}
+
+.import-flags img {
+    border: white 1px solid;
+}
+
+.import-flags {
+    display: flex;
+    position: absolute;
+    bottom: -1vw;
+    gap: 0.4vw;
+    margin: -0.5vw 1.5vw;
+    left: 6vw;
+}
+
+/*Modal block*/
+
+/*Efecto*/
+.modalmask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox{
+    width: 59vw;
+    position: relative;
+    padding: 2.5vw;
+    padding: 3vw;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+}
+
+/*Movimientos*/
+.movedown {
+    margin: 0 auto;
+}
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+ 
+}
+.modalmask:target .movedown{
+    margin: 5vw auto;
+}
+.modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);
+}
+ 
+.modalmask:target .resize{
+    width:400px;
+    height:200px;
+}
+
+/*Boton de cerrar*/
+.close {
+    color: var(--white);
+    line-height: 2vw;
+    position: absolute;
+    right: -15vw;
+    text-align: center;
+    top: -3vw;
+    font-size: 2vw;
+    width: 2.2vw;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+.close:hover {
+    color: var(--orange);
+}
+
+.modalbox video {
+    width: 100%;
+}
