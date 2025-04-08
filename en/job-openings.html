@@ -10,7 +10,7 @@
 <script type="text/javascript">
 (function(){
   emailjs.init({
-    publicKey: "a501cBZ0H6CpUunpO",
+    publicKey: "u8drzbPRUuSd9-DCf",
   });
 })();
 </script>
@@ -19,7 +19,10 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <img class="logo-img" src="../icons/logoT.png" alt="Ticarsa logo">
+            <a href="../en.html">
+                <img class="logo-img" src="/icons/logoT.png" alt="Ticarsa logo">
+            </a>
+
             <nav role="navigation">
                 <div id="menuToggle">
                     <input type="checkbox">
@@ -27,11 +30,21 @@
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                        <a href="../en.html"><li>Home</li></a>
-                        <a href="divisions.html"><li>Divisions</li></a>
-                        <a href="company.html"><li>Company</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="#"><li>Job Openings</li></a>
+                        <a href="../en.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="divisions.html">
+                            <li>Divisions</li>
+                        </a>
+                        <a href="company.html">
+                            <li>Company</li>
+                        </a>
+                        <a class="scroll-btn" href="#contact">
+                            <li>Contact</li>
+                        </a>
+                        <a href="job-openings.html">
+                            <li>Job Openings</li>
+                        </a>
                         <div class="menu-element language-container">
                             <a class="lang-img" href="../bolsa-de-trabajo.html">
                                 <img src="../icons/mx.png" alt="switch to Spanish">
@@ -45,9 +58,21 @@
             </nav>
             <div class="menu-container">
                 <a class="menu-element menu-separation" href="../en.html">Home</a>
-                <a class="menu-element menu-separation" href="divisions.html">Divisions</a>
+                <div class="menu-element text menu-separation dropdown">
+                    <a href="divisions.html">Divisions</a>
+                    <ul class="dropdown-content">
+                        <li><a href="dry-boxes.html">Dry Boxes</a></li>
+                        <li><a href="refrigerated.html">Refrigerated</a></li>
+                        <li><a href="platforms.html">Platforms</a></li>
+                        <li><a href="food-hoppers.html">Food Hoppers</a></li>
+                        <li><a href="tanker-trucks.html">Tanker Trucks</a></li>
+                        <li><a href="pressurized-hoppers.html">Pressurized Hoppers</a></li>
+                        <li><a href="iso-tanks.html">Iso Tanks</a></li>
+                        <li><a href="export.html">Export</a></li>
+                    </ul>
+                </div>
                 <a class="menu-element menu-separation" href="company.html">Company</a>
-                <a class="menu-element menu-separation" href="#">Contact</a>
+                <a class="menu-element menu-separation scroll-btn" href="#contact">Contact</a>
                 <a class="menu-element" href="job-openings.html">Job Openings</a>
                 <div class="menu-element language-container">
                     <a class="lang-img" href="../bolsa-de-trabajo.html">
@@ -61,131 +86,176 @@
         </nav>
     </header>
 
-    <section class="bolsa-container line-decoration-bolsa">
-        <img src="../icons/bolsa.png" alt="" class="presentation-img bolsa-img">
-        <img src="../icons/bolsaCel.png" alt="" class="presentation-img bolsa-img-mobile-top">
-        <div class="bolsa-description">
-            <h2 class="bolsa-title title title-decoration">
-                JOB BOARD
+    <section class="about-presentation-container bolsa-presentation-container">
+        <img src="../icons/bolsa2/bolsaDesk.jpg" alt="" class="about-presentation-img">
+        <img src="../icons/bolsa2/bolsaCel.jpg" alt="" class="bolsa-presentation-img-mobile">
+        <div class="about-presentation-description mobile-hidden">
+            <h2 class="about-presentation-title title title-decoration animate__animated animate__fadeInUp">
+                JOIN THE RED TEAM
             </h2>
-            <p class="bolsa-text text">Be part of the best transport team and enjoy
-            all its benefits in professional and economic development. <br> <br>
-            Apply for the vacancy of your interest:</p>
-
-            <div class="button-container">
-                <a class="bolsa-button" href="#">
-                    <img src="../icons/flechaR.png">
-                    Operators
-                </a>
-                <a class="bolsa-button" href="#">
-                    <img src="../icons/flechaR.png">
-                    Administrative
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="bolsa-container line-decoration-bolsa">
-        <img src="../icons/opera.png" alt="" class="presentation-img bolsa-img">
-        <img src="../icons/operaCel.png" alt="" class="presentation-img bolsa-img-mobile">
-        <div class="bolsa-description">
-            <h2 class="bolsa-title title title-decoration">
-                FIFTH WHEEL OPERATORS
-            </h2>
-            <p class="bolsa-text text">Join the best cargo transport team and be part
-                of the elite first-level operators in Mexico and enjoy great benefits for you
-                and your family.</p>
-
-            <ul class="bolsa-list text">
-                <li>Modern units with the best technology.</li>
-                <li>Very attractive salaries and benefits.</li>
-                <li>Support and scholarships in education.</li>
-                <li>Bonuses for compliance and recommendation.</li>
-                <li>Support activities for family members.</li>
-            </ul>
-
-            <a class="bolsa-button bolsa-button-mobile" href="#">
-                <img src="../icons/flecha.png">
-                Whatsapp
-            </a>
-        </div>
-    </section>
-
-    <section class="bolsa-container line-decoration-bolsa">
-        <img src="../icons/bolsaopera.png" alt="" class="presentation-img bolsa-img">
-        <img src="../icons/bolsaoperaCel.png" alt="" class="presentation-img bolsa-img-mobile">
-        <div class="bolsa-description">
-            <h2 class="bolsa-title title title-decoration">
-                OPERATOR SCHOOL
-            </h2>
-            <p class="bolsa-text text">
-                Thanks to our alliance with ICET, we provide scholarships for the training of professional fifth wheel operators. <br>
-                Training with the best tools and technology.
+            <p class="text bolsa-text animate__animated animate__fadeInUp">
+                Become part of the best cargo transport operator team in all of Mexico and enjoy its personal and professional benefits.
             </p>
+            <a class="bolsa-button scroll-btn" href="#operators">
+                <img src="../icons/flecha.png">
+                Apply
+            </a>
+        </div>
+    </section>
 
-            <div class="bolsa-icons">
-                <div class="bolsa-icon">
-                    <img src="../icons/bolsa/icon3.png" alt="">
-                    <p class="text">
-                        Open to women and men
-                    </p>
-                </div>
-                <div class="bolsa-icon">
-                    <img src="../icons/bolsa/icon4.png" alt="">
-                    <p class="text">
-                        Training and education
-                    </p>    
-                </div>
-                <div class="bolsa-icon">
-                    <img src="../icons/bolsa/icon2.png" alt="">
-                    <p class="text">
-                        Free scholarships for everyone
-                    </p>
-                </div>
-                <div class="bolsa-icon">
-                    <img src="../icons/bolsa/icon1.png" alt="">
-                    <p class="text">
-                        Practice in Ticarsa units
-                    </p>
+    <div class="division-description bolsa-division desktop-hidden">
+        <h2 class="division-title title title-decoration animate__animated animate__fadeInUp">
+            JOIN THE RED TEAM
+        </h2>
+
+        <div class="division-buttons-container">
+            <a class="division-button scroll-btn" href="#operators">
+                <img src="../icons/flecha.png">
+                See More
+            </a>
+            <a class="bolsa-button scroll-btn" href="#contact">
+                <img src="../icons/flecha.png">
+                Apply
+            </a>
+        </div>
+    </div>
+
+    <section class="bolsa-icons-container">
+        <p class="text desktop-hidden">
+            Become part of the best cargo transport operator team in all of Mexico and enjoy its personal and professional benefits.
+        </p>
+        <div class="benefit-container">
+            <div class="benefit-img-container">
+                <img src="../icons/bolsa2/bon1.png" alt="" class="benefit-img animup initial-opacity-transition">
+            </div>
+            <div class="benefit-description-container">
+                <h3 class="title">
+                    MONTHLY SALARY UP TO
+                </h3>
+                <div class="price">
+                    <h2 class="title">
+                        $40,000
+                    </h2>
+                    <span class="title">
+                        MXN
+                    </span>
                 </div>
             </div>
-            
-
-            <a class="bolsa-button bolsa-button-mobile" href="#">
-                <img src="../icons/flecha.png">
-                Whatsapp
-            </a>
+        </div>
+        <div class="benefit-container">
+            <div class="benefit-img-container">
+                <img src="../icons/bolsa2/bon2.png" alt="" class="benefit-img animup initial-opacity-transition">
+            </div>
+            <div class="benefit-description-container">
+                <h3 class="title">
+                    RETENTION BONUS
+                </h3>
+                <div class="price">
+                    <h2 class="title">
+                        $30,000
+                    </h2>
+                    <span class="title">
+                        MXN
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="benefit-container">
+            <div class="benefit-img-container">
+                <img src="../icons/bolsa2/bon3.png" alt="" class="benefit-img animup initial-opacity-transition">
+            </div>
+            <div class="benefit-description-container">
+                <h3 class="title">
+                    REFERRAL BONUS
+                </h3>
+                <div class="price">
+                    <h2 class="title">
+                        $5,000
+                    </h2>
+                    <span class="title">
+                        MXN
+                    </span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="bolsa-container line-decoration-bolsa">
-        <img src="/icons/admin.png" alt="" class="presentation-img bolsa-img">
-        <img src="/icons/adminCel.png" alt="" class="presentation-img bolsa-img-mobile">
-        <div class="bolsa-description">
-            <h2 class="bolsa-title title title-decoration">
-                ADMINISTRATIVE TEAM
+    <section class="benefits-table-container benefits-table-container-eng mobile-hidden">
+        <ul>
+            <li class="text">CHRISTMAS BONUS</li>
+            <li class="text">FINANCIAL SUPPORT</li>
+            <li class="text">FREE TRAINING</li>
+            <li class="text">VACATION</li>
+        </ul>
+        <ul>
+            <li class="text">PROFIT SHARING</li>
+            <li class="text">INFONAVIT</li>
+            <li class="text">UNIFORMS</li>
+            <li class="text">GROCERY VOUCHERS</li>
+        </ul>
+        <ul>
+            <li class="text">LIFE INSURANCE</li>
+            <li class="text">ROAD SAFETY INSURANCE</li>
+            <li class="text">HEALTH CARE</li>
+            <li class="text">FAMILY PROGRAMS</li>
+        </ul>
+    </section>
+
+    <section class="benefits-table-container-mobile desktop-hidden">
+        <ul>
+            <li class="text">CHRISTMAS BONUS</li>
+            <li class="text">PROFIT SHARING</li>
+            <li class="text">LIFE INSURANCE</li>
+            <li class="text">FREE TRAINING</li>
+            <li class="text">UNIFORMS</li>
+            <li class="text">HEALTH CARE</li>
+        </ul>
+        <ul>
+            <li class="text">FINANCIAL SUPPORT</li>
+            <li class="text">INFONAVIT</li>
+            <li class="text">ROAD SAFETY</li>
+            <li class="text">VACATION</li>
+            <li class="text">GROCERY VOUCHERS</li>
+            <li class="text">FAMILY PROGRAMS</li>
+        </ul>
+    </section>
+
+    <section class="requirement-container" id="operators">
+        <div class="requirement-header">
+            <h2 class="title requirement-title title-decoration">
+                OPERATOR REQUIREMENTS
             </h2>
-            <p class="bolsa-text text">Excellent flexible and pleasant work environment for professional growth in any type of career.</p>
-            
-            <ul class="bolsa-list text">
-                <li>Very attractive salaries and benefits</li>
-                <li>Support and scholarships in education</li>
-                <li>Special support activities and events</li>
-                <li>Constant and free training</li>
-                <li>Modern work facilities and equipment</li>
-            </ul>
-
-            <a class="bolsa-button bolsa-button-mobile" href="#">
+            <p class="text">
+                Apply now and become part of our team.
+            </p>
+            <a class="requirement-button scroll-btn" href="#contact">
                 <img src="../icons/flecha.png">
-                Whatsapp
+                Apply
             </a>
         </div>
+        <div class="requirement-body">
+            <div class="requirement-element">
+                <img src="../icons/bolsa2/iconExp.png" alt="">
+                <p class="text">
+                    Verifiable experience
+                </p>
+            </div>
+            <div class="requirement-element">
+                <img src="../icons/bolsa2/iconLicencia.png" alt="">
+                <p class="text">
+                    Federal License
+                </p>
+            </div>
+            <div class="requirement-element">
+                <img src="../icons/bolsa2/iconApto.png" alt="">
+                <p class="text">
+                    Medical Certification
+                </p>
+            </div>
+        </div>
     </section>
-
-
     
     <section class="social-responsability-container">
-
         <div class="inner-social-responsability-container">
             <div class="social-responsability-header">
                 <h2 class="social-responsability-title title title-decoration">
@@ -198,59 +268,133 @@
                     <p class="value text">WELL-BEING</p>
                 </div>
             </div>
-            <p class="value-description text">We are a company that always seeks the integral well-being of all our collaborators. Both inside and outside our
-                collaborators. Both inside and outside our facilities, we support our community, employees, families,
+            <p class="value-description text">We are a company that always seeks the comprehensive well-being of all our employees. 
+                Both inside and outside our facilities, we support our community, employees, families, 
                 and society in general through programs for their development.
             </p>
             <div class="social-responsability-body">
-                <img src="../icons/1.png" alt="">
-                <img src="../icons/2.png" alt="">
-                <img src="../icons/3.png" alt="">
-                <img src="../icons/4.png" alt="">
-                <img src="../icons/5.png" alt="">
-                <img src="../icons/6.png" alt="">
+                <img src="../icons/1.png" alt="" class="animup initial-opacity-transition">
+                <img src="../icons/2.png" alt="" class="animup initial-opacity-transition">
+                <img src="../icons/3.png" alt="" class="animup initial-opacity-transition">
+                <img src="../icons/4.png" alt="" class="animup initial-opacity-transition">
+                <img src="../icons/5.png" alt="" class="animup initial-opacity-transition">
+                <img src="../icons/6.png" alt="" class="animup initial-opacity-transition">
             </div>
         </div>
     </section>
 
-    <section class="contact-container">
+    <section class="bolsa-container" id="operator-school">
+        <img src="../icons/bolsaopera.png" alt="" class="presentation-img bolsa-img animup initial-opacity-transition">
+        <img src="../icons/bolsaoperaCel.png" alt="" class="presentation-img bolsa-img-mobile animup initial-opacity-transition">
+        <div class="bolsa-description">
+            <h2 class="bolsa-title title title-decoration animup initial-opacity-transition">
+                OPERATOR SCHOOL
+            </h2>
+            <p class="job-text text animup initial-opacity-transition">
+                Thanks to our alliance with ICET, we provide scholarships for the training of 
+                professional fifth wheel operators. <br>
+                Training with the best tools and technology.
+            </p>
+
+            <div class="bolsa-icons">
+                <div class="bolsa-icon">
+                    <img src="../icons/bolsa/icon3.png" alt="">
+                    <p class="text animup initial-opacity-transition">
+                        Open for women and men
+                    </p>
+                </div>
+                <div class="bolsa-icon">
+                    <img src="../icons/bolsa/icon4.png" alt="">
+                    <p class="text animup initial-opacity-transition">
+                        Education and training
+                    </p>    
+                </div>
+                <div class="bolsa-icon">
+                    <img src="../icons/bolsa/icon2.png" alt="">
+                    <p class="text animup initial-opacity-transition">
+                        Free scholarships for everyone
+                    </p>
+                </div>
+                <div class="bolsa-icon">
+                    <img src="../icons/bolsa/icon1.png" alt="">
+                    <p class="text animup initial-opacity-transition">
+                        Practice in Ticarsa units
+                    </p>
+                </div>
+            </div>
+            
+            <a class="job-button bolsa-button-mobile animup initial-opacity-transition" href="https://wa.me/528119085976">
+                <img src="../icons/flecha.png">
+                Whatsapp
+            </a>
+        </div>
+    </section>
+
+    <section class="bolsa-container" id="admin">
+        <img src="../icons/admin.png" alt="" class="presentation-img bolsa-img animup initial-opacity-transition">
+        <img src="../icons/adminCel.png" alt="" class="presentation-img bolsa-img-mobile animup initial-opacity-transition">
+        <div class="bolsa-description">
+            <h2 class="bolsa-title title title-decoration animup initial-opacity-transition">
+                ADMINISTRATIVE TEAM
+            </h2>
+            <p class="job-text text animup initial-opacity-transition">Excellent flexible and pleasant work environment for professional
+                growth in any type of career.</p>
+            
+            <ul class="bolsa-list text animup initial-opacity-transition">
+                <li>Very attractive salaries and benefits</li>
+                <li>Education support and scholarships</li>
+                <li>Special activities and support events</li>
+                <li>Constant and free training</li>
+                <li>Modern facilities and work equipment</li>
+            </ul>
+
+            <a class="job-button bolsa-button-mobile animup initial-opacity-transition" href="https://wa.me/528119085976">
+                <img src="../icons/flecha.png">
+                Whatsapp
+            </a>
+        </div>
+    </section>
+
+    <section class="contact-container" id="contact">
         <div class="inner-contact-container">
             <div class="form-container">
                 <h2 class="title form-title">WE ARE READY TO SERVE YOU</h2>
-                <p class="text form-text">Quote your service through your favorite contact method. <br> Receive immediate attention from our advisors.</p>
+                <p class="text form-text">Request your service through your favorite contact method. <br> Receive immediate
+                    attention from our advisors.</p>
                 <form action="" method="post">
-                    <input type="text" placeholder="Name" name="nombre" id="">
-                    <input type="tel" placeholder="Phone" name="telefono" id="">
-                    <input type="email" placeholder="Email" name="correo" id="">
-                    <input type="text" placeholder="City" name="ciudad" id="">
-                    <input type="text" placeholder="Service of interest" name="servicio" id="">
-                    <textarea placeholder="Message" name="mensaje" id=""></textarea>
+                    <input type="text" placeholder="Name" name="name" id="">
+                    <input type="tel" placeholder="Phone" name="phone" id="">
+                    <input type="text" placeholder="City" name="city" id="">
+                    <input type="text" placeholder="Position of interest" name="position" id="">
                     <button type="submit"><img src="../icons/flechaR.png">SEND</button>
                 </form>
             </div>
-            <div class="direct-contact-container">
-                <img class="lema-img" src="../icons/escudo.png" alt="shield motto">
+            <div class="direct-contact-container animup initial-opacity-transitio">
+                <img class="lema-img" src="../icons/escudo.png" alt="motto shield">
                 <div class="inner-direct-contact-container">
                     <h3>Direct contacts</h3>
-                    <a class="icons-img" href="#"><img src="../icons/tel.png" alt="">828 282 4010 / 828 824 7110</a>
-                    <a class="icons-img" href="#"><img src="../icons/wa.png" alt="">81 1908 5976</a>
-                    <a class="icons-img" href="#"><img src="../icons/mail.png" alt="">contacto@ticarsa.com.mx</a>
-                    <a class="icons-img" href=""><img src="../icons/ubic.png" alt="">Autopista Cadereyta a Reynosa Km 36.5 Cadedreyra Jiménez N.L. C.P. 67483</a>
+                    <div class="icons-img" href="#"><img src="../icons/tel.png" alt="">
+                        <a href="tel:8282824010" class="text">828 282 4010 /</a>
+                        <a href="tel:8288247110" class="text"> 828 824 7110</a>
+                    </div>
+                    <a class="icons-img" href="https://wa.me/528119085976"><img src="../icons/wa.png" alt="">81 1908 5976</a>
+                    <a class="icons-img" href="mailto:contacto@ticarsa.com.mx"><img src="../icons/mail.png" alt="">contacto@ticarsa.com.mx</a>
+                    <a class="icons-img" href="https://maps.app.goo.gl/sQifUYBKEu8UiV9c7"><img src="../icons/ubic.png" alt="">Autopista Cadereyta a Reynosa Km 36.5 Cadedreyra Jiménez N.L. C.P. 67483</a>
                 </div>
                 <div class="rss-container contact-rss">
-                    <a href="#" class="rss-img">
+                    <a href="https://www.facebook.com/ticarsa" class="rss-img">
                         <img src="../icons/fb.png" alt="facebook">
                     </a>
-                    <a href="#" class="rss-img">
+                    <a href="https://www.instagram.com/ticarsamx/" class="rss-img">
                         <img src="../icons/ins.png" alt="instagram">
                     </a>
-                    <a href="#" class="rss-img">
+                    <a href="https://www.youtube.com/@ticarsaoficial" class="rss-img">
                         <img src="../icons/you.png" alt="youtube">
                     </a>
-                    <a href="#" class="rss-img">
+                    <a href="https://www.tiktok.com/@ticarsaoficial" class="rss-img">
                         <img src="../icons/tik.png" alt="tiktok">
                     </a>
-                    <a href="#" class="rss-img">
+                    <a href="https://www.linkedin.com/company/ticarsa" class="rss-img">
                         <img src="../icons/in1.png" alt="linkedin">
                     </a>
                 </div>
@@ -270,15 +414,16 @@
                 </nav>
                 <div class="nav-privacy">
                     <p class="text">All Rights Reserved Ticarsa</p>
-                    <a href="#" class="text">Privacy Notice</a>
+                    <a href="#" class="text">Privacy Policy</a>
                     <p class="text">
-                        Website made by: <a href="https://www.brachar.com">Brachar</a>
+                        Website created by: <a href="https://www.brachar.com">Brachar</a>
                     </p>
                 </div>
             </div>
             <img class="logo-img" src="../icons/logoTwhite.png" alt="Ticarsa logo">
         </footer>
     </section>
-
+    <script src="../app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 </body>
 </html>

@@ -3969,6 +3969,30 @@ section.bolsa-icons-container > p {
     color: var(--color-red);
 }
 
+.benefits-table-container-eng ul{
+    gap: 8vw !important;
+}
+
+.benefits-table-container-eng ul:nth-of-type(1) li:nth-of-type(2) {
+    margin-left: -1vw !important;
+}
+
+.benefits-table-container-eng ul:nth-of-type(1) li:nth-of-type(4) {
+    margin-left: 2.7vw !important;
+}
+
+.benefits-table-container-eng ul:nth-of-type(1) li:nth-of-type(3) {
+    margin-left: .6vw !important;
+}
+
+.benefits-table-container-eng ul:nth-of-type(3) li:nth-of-type(3) {
+    margin-left: -1.8vw !important;
+}
+
+.benefits-table-container-eng ul:nth-of-type(3) li:nth-of-type(4) {
+    margin-left: 3.5vw !important;
+}
+
 .benefits-table-container ul:nth-of-type(1)::before {
     content: "";
     position: absolute;
