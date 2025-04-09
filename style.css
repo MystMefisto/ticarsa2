@@ -4279,3 +4279,11 @@ section.bolsa-icons-container > p {
 .modalbox video {
     width: 100%;
 }
+
+.text-bold{
+    font-weight: bold !important;
+}
+
+.inner-direct-contact-container .text-bold{
+    font-size: 1.15vw;
+}

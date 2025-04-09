@@ -1,6 +1,7 @@
 const form = document.querySelector('form');
 const formButton = document.querySelector('form button');
-
+const vacantForm = document.querySelector('form.vacant-form');
+const vacantButton = document.querySelector('form button.vacant-button');
 //Generating on scroll animations
 document.addEventListener('DOMContentLoaded', function() {
     // Initializing ScrollMagic
@@ -137,3 +138,10 @@ formButton.addEventListener('click', function(e){
     }, 500);
 });
 
+vacantButton.addEventListener('click', function(e){
+    e.preventDefault();
+    sendVacantMail();
+    setTimeout(() => {
+        window.location.reload(true);
+    }, 500);
+});
