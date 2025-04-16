@@ -145,3 +145,21 @@ vacantButton.addEventListener('click', function(e){
         window.location.reload(true);
     }, 500);
 });
+
+//loading video for fking dumpshit iphone
+
+const presentationVideo = document.querySelector('.presentation-video-container video');
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    if (presentationVideo && !presentationVideo.paused) {
+        presentationVideo.play(); // Start playing the video
+    }
+
+});
+
+setTimeout(() => {
+    if (presentationVideo && !presentationVideo.paused) {
+        presentationVideo.play(); // Start playing the video
+    }
+}, 800);

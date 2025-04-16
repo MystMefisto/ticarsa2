@@ -227,13 +227,14 @@ body {
     }
 
     .presentation-description {
-        position: relative !important;
+        position: absolute !important;
         left: 0 !important;
         background: var(--color-black) !important;
         color: white !important;
         border-radius: 0 !important;
         width: 100% !important;
-        height: 24vw !important;
+        height: 31vw !important;
+        top: 54vw !important;
     }
 
     .presentation-container {
@@ -263,6 +264,7 @@ body {
 
     .nav-bar {
         width: 100% !important;
+        height: 11vw !important;
     }
 
     .nav-bar .logo-img {
@@ -278,22 +280,22 @@ body {
     .logo-img {
         height: 9vw !important;
         margin: 0 !important;
-        padding-bottom: 7.7vw !important;
+        padding-bottom: 9.5vw !important;
         margin-left: 0vw !important;
         margin-top: 3vw !important;
     }
 
     .presentation-menu-container {
-        position: relative !important;
-        top: auto !important;
+        position: absolute !important;
+        top: 83.7vw !important;
         left: auto !important;
         width: 100% !important;
         height: 8vw !important;
-        padding: 3vw 0;
+        padding: 1.5vw 0;
     }
 
     .presentation-title {
-        top: -22vw !important;
+        top: 3vw !important;
         left: auto !important;
         margin-left: 11vw !important;
     }
@@ -301,9 +303,9 @@ body {
     .presentation-text {
         font-size: 2vw !important;
         margin-top: 0 !important;
-        line-height: 2.8vw !important;
+        line-height: 4.4vw !important;
         left: 11vw !important;
-        top: -11vw !important;
+        top: 15vw !important;
     }
 
     .presentation-button {
@@ -320,17 +322,19 @@ body {
     }
 
     .text {
-        font-size: 3.2vw !important;
+        font-size: 2.8vw !important;
     }
 
     .services-container{
-        margin-top: 15vw !important;
+        margin-top: 52vw !important;
+        margin-bottom: 10vw !important;
     }
 
     .services-header-container {
         flex-direction: column !important;
         align-items: flex-start !important;
         top: 24vw !important;
+        width: 82vw !important;
     }
 
     .services-title {
@@ -362,13 +366,13 @@ body {
         flex-wrap: wrap !important;
         justify-content: space-between !important;
         width: 72vw !important;
-        gap: 9vw 1vw !important;
+        gap: 13vw 1vw !important;
         margin-left: 3vw !important;
     }
 
     .second-list-container{
         padding-top: 0 !important;
-        padding-top: 9vw !important;
+        padding-top: 13vw !important;
         padding-bottom: 4vw !important;
     }
 
@@ -466,7 +470,7 @@ body {
     }
 
     .about-text {
-        width: 85% !important;
+        width: 100% !important;
     }
 
     .inner-about {
@@ -564,7 +568,7 @@ body {
     }
 
     .clients-text {
-        width: 73% !important;
+        width: 96vw !important;
     }
 
     .coverage-container {
@@ -574,6 +578,7 @@ body {
 
     .map-img img {
         width: 85vw !important;
+        margin-top: 4vw !important;
     }
 
     .coverage-container::before {
@@ -597,12 +602,12 @@ body {
     .coverage-text {
         position: absolute !important;
         top: 29vw !important;
-        width: 60% !important;
+        width: 86vw !important;
     }
 
     .coverage-ubication {
         padding-top: 1vw !important;
-        gap: 2vw !important;
+        gap: 11vw !important;
         line-height: 4vw !important;
     }
 
@@ -638,7 +643,7 @@ body {
     }
 
     .accreditations-text {
-        width: 59% !important;
+        width: 94vw !important;
     }
 
     .accreditations-logo-container img:nth-child(1),
@@ -684,6 +689,10 @@ body {
         height: 0.1vw !important;
     }
 
+    .accreditations-container{
+        width: 82vw !important;
+    }
+
     .social-responsability-header {
         flex-direction: column !important;
         height: 14vw !important;
@@ -722,7 +731,11 @@ body {
     }
 
     .social-responsability-body img {
-        width: 34vw !important;
+        width:78vw !important;
+    }
+
+    .social-responsability-body img:nth-of-type(n+3){
+        display: none !important;
     }
 
     form {
@@ -751,6 +764,8 @@ body {
     .form-container {
         display: flex !important;
         flex-direction: column !important;
+        width: 72vw !important;
+        margin: auto !important;
     }
 
     .direct-contact-container {
@@ -758,41 +773,63 @@ body {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        margin-left: -3vw !important;
+        margin: auto !important;
     }
 
     .lema-img {
-        height: 22vw !important;
-        width: 18vw !important;
+        height: 25vw !important;
+        width: 20vw !important;
         padding: 3vw 0 0 0 !important;
     }
 
     .inner-direct-contact-container h3 {
-        font-size: 4vw !important;
+        font-size: 3vw !important;
+        margin-bottom: 2vw !important;
     }
 
     .icons-img {
-        font-size: 3vw !important;
+        font-size: 3.3vw !important;
+        gap: 1.7vw !important;
         width: auto !important;
+        margin: auto !important;
     }
 
     .inner-direct-contact-container {
-        width: 50vw !important;
+        width: 59vw !important;
         text-align: center !important;
-        align-items: center !important;
-        gap: 2.5vw !important;
+        align-items: baseline !important;
+        gap: 4.5vw !important;
         padding-bottom: 4vw !important;
     }
 
+   .inner-direct-contact-container.index-generic-container{
+        width: 73vw!important;
+        align-items: center !important;
+   }
+
+   .inner-direct-contact-container.index-generic-container .icons-img{
+        margin-left: auto !important;
+   }
+
+   .inner-direct-contact-container.index-generic-container h3{
+    font-size: 4vw !important;
+   }
+
+   .inner-direct-contact-container.index-generic-container .icons-img:nth-of-type(1){
+    font-size: 3vw !important;
+   }
+
+    .icons-img{
+        margin-left: 14.5vw !important;
+    }
+
     .icons-img:nth-child(5) {
-        font-size: 3.1vw !important;
         text-align: left !important;
-        margin-left: 2vw !important;
     }
 
     .icons-img img {
-        width: 2.8vw !important;
-        height: 2.8vw !important;
+        width: 4vw !important;
+        height: 4vw !important;
     }
 
     .rss-container img {
@@ -804,7 +841,7 @@ body {
         width: 18vw !important;
         gap: 4vw !important;
         margin-right: 23vw !important;
-        padding: 3vw 0 !important;
+        padding: 9vw 0 !important;
     }
 
     .footer-nav {
@@ -814,12 +851,14 @@ body {
     .nav-privacy {
         display: flex !important;
         flex-direction: column !important;
+        gap: 0 !important;
     }
 
     footer {
         display: flex !important;
         flex-direction: column-reverse !important;
         margin: auto !important;
+        padding-top: 0 !important;
     }
 
     .nav-privacy a,
@@ -1015,7 +1054,8 @@ body {
     }
 
     .bolsa-division{
-        padding: 4vw 0 !important;
+        padding: 5vw 0 !important;
+        margin-top: -1vw !important;
     }
 
     .bolsa-division h2::before{
@@ -1023,7 +1063,7 @@ body {
     }
 
     .bolsa-division{
-        background-color: #232323 !important;
+        background-color: #313131 !important;
     }
 
     .bolsa-button {
@@ -1035,6 +1075,7 @@ body {
         width: 22vw !important;
         height: 6vw !important;
         gap: 1vw !important;
+        margin-top: 2.8vw !important;
     }
 
     .bolsa-button img {
@@ -1044,6 +1085,8 @@ body {
     .division-description h3,
     .division-description h2 {
         margin-left: 6vw !important;
+        font-size: 6vw !important;
+        margin-top: 0.8vw !important;
     }
 
     .disclaimer-container {
@@ -1189,7 +1232,7 @@ body {
     .bolsa-presentation-img-mobile {
         display: block !important;
         width: 100% !important;
-        height: 60vw;
+        height: 65vw !important;
         margin: 0 !important;
     }
 
@@ -1409,7 +1452,7 @@ body {
 
     .benefit-container {
         border-radius: 1.5vw !important;
-        width: 76vw !important;
+        width: 81vw !important;
         height: 21vw !important;
     }
     
@@ -1636,6 +1679,7 @@ a,
     width: 78.4vw;
     height: 30.7vw;
     border-radius: 1vw;
+    margin-top: -1vw;
 }
 
 .header-container {
@@ -1851,7 +1895,7 @@ a,
     width: 85%;
     margin: auto;
     margin-left: 4vw;
-    margin-bottom: 11vw;
+    margin-bottom: 6.5vw;
     margin-top: 8vw;
 }
 
@@ -2312,7 +2356,7 @@ a,
 }
 
 .accreditations-container {
-    width: 80.5%;
+    width: 76.5%;
     padding-top: 6.2vw;
     margin: auto;
 }
@@ -2335,8 +2379,8 @@ a,
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 74.2vw;
-    gap: 4vw 4.6vw;
+    width: 73.2vw;
+    gap: 4vw 3.6vw;
     padding: 1vw 2vw 2.6vw 2vw;
     margin: auto;
     margin-bottom: 10.4vw;
@@ -2353,7 +2397,7 @@ a,
     position: absolute;
     background-color: white;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 98.2% 100%, 0 100%);
-    width: 78vw;
+    width: 76.9vw;
     left: 0.1vw;
     height: 18.4vw;
     top: 0.08vw;
@@ -2405,7 +2449,7 @@ a,
 }
 
 .inner-social-responsability-container {
-    width: 80%;
+    width: 76.5%;
     margin: auto;
 }
 
@@ -2447,7 +2491,7 @@ a,
 }
 
 .social-responsability-body img {
-    width: 25vw;
+    width: 24vw;
 }
 
 
@@ -3270,7 +3314,7 @@ footer .logo-img {
 }
 
 .related-posts .title {
-    width: 80.5%;
+    width: 76.5%;
     margin: auto;
     color: var(--color-red);
 }
@@ -3282,7 +3326,7 @@ footer .logo-img {
 .related-posts .list-container {
     margin: auto;
     padding: 2vw 0 6vw 0;
-    width: 80.5%;
+    width: 76.5%;
 }
 
 .gallery-container {
@@ -3313,7 +3357,7 @@ footer .logo-img {
 }
 
 .inner-gallery-container {
-    width: 80.5%;
+    width: 76.5%;
     display: flex;
     margin: auto;
     gap: 2vw;
@@ -3321,7 +3365,7 @@ footer .logo-img {
 }
 
 .inner-gallery-container img {
-    height: 29vw;
+    height: 28vw;
 }
 
 .column-gallery {
@@ -3335,7 +3379,7 @@ footer .logo-img {
 }
 
 .header-security-container {
-    width: 80.5%;
+    width: 76.5%;
     display: flex;
     margin: auto;
     gap: 12.5vw;
@@ -3361,7 +3405,7 @@ footer .logo-img {
 }
 
 .security-body {
-    width: 80.5%;
+    width: 76.9%;
     display: flex;
     position: relative;
     margin: auto;
@@ -3405,7 +3449,7 @@ footer .logo-img {
 .division-img {
     display: flex;
     margin-left: 6.2vw;
-    width: 78.4vw;
+    width: 73.9vw;
     height: auto;
 }
 
@@ -3536,7 +3580,7 @@ footer .logo-img {
     position: absolute;
     width: 7.6vw;
     background-color: var(--color-gray);
-    right: 10vw;
+    right: 12.6vw;
     height: .7vw;
     bottom: 0;
 }
@@ -3791,12 +3835,12 @@ footer .logo-img {
 
 /* Hovers */
 
-.about-button:hover, .presentation-button:hover, .coverage-button:hover, .division-button:hover, .bolsa-container:nth-of-type(n+2) .bolsa-description .bolsa-button.bolsa-button-mobile:hover {
+.about-button:hover, .presentation-button:hover, .coverage-button:hover, .division-button:hover, .bolsa-container:nth-of-type(n+2) .bolsa-description .bolsa-button.bolsa-button-mobile:hover, .index-button:hover, .bolsa-button:hover {
     background-color: var(--color-yellow);
     transition: background-color 0.25s ease;
 }
 
-.about-button:hover img, .presentation-button:hover img, .coverage-button:hover img,.division-button:hover img, .bolsa-container:nth-of-type(n+2) .bolsa-description .bolsa-button.bolsa-button-mobile:hover img {
+.about-button:hover img, .presentation-button:hover img, .coverage-button:hover img,.division-button:hover img, .bolsa-container:nth-of-type(n+2) .bolsa-description .bolsa-button.bolsa-button-mobile:hover img , .index-button:hover img,.bolsa-button:hover img {
     filter: hue-rotate(-45deg) saturate(572%) brightness(110%);
     transition: filter 0.25s ease;
 }
@@ -3855,10 +3899,10 @@ button[type="submit"]:hover {
 
 .benefit-container {
     display: flex;
-    width: 28vw;
-    height: 9vw;
+    width: 25.3vw;
+    height: 8vw;
     margin: auto;
-    border-radius: 1.5vw;
+    border-radius: 0.5vw;
 }
 
 .price {
@@ -3869,23 +3913,23 @@ button[type="submit"]:hover {
 
 .benefit-description-container {
     color: white;
-    padding-left: 1vw;
+    padding-left: 1.8vw;
 }
 
 .price h2 {
-    font-size: 3.4vw;
+    font-size: 2.8vw;
     margin: 0;
 }
 
 .benefit-description-container > h3 {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     margin: 1.3vw 0 -0.1vw 0;
     width: 9vw;
 }
 
 .benefit-img-container img {
     margin: 1.8vw;
-    width: 70%;
+    width: 5vw;
     height: auto;
 }
 
@@ -3894,7 +3938,7 @@ button[type="submit"]:hover {
 }
 
 .benefit-img-container {
-    border-radius: 1.5vw 0 0 1.5vw;
+    border-radius: .5vw 0 0 .5vw;
     width: 34%;
 }
 
@@ -3904,6 +3948,7 @@ button[type="submit"]:hover {
     align-items: center;
     gap: 1.3vw;
     margin: 2vw 10vw;
+    width: 78.3vw;
 }
 
 section.bolsa-icons-container > p {
@@ -4004,7 +4049,7 @@ section.bolsa-icons-container > p {
     height: 3vw;
     z-index: -1;
     left: 10.1vw;
-    top: 45.6vw;
+    top: 44.6vw;
     border-radius:.6vw;
 }
 
@@ -4016,7 +4061,7 @@ section.bolsa-icons-container > p {
     height: 3vw;
     z-index: -1;
     left: 10.1vw;
-    top: 52.3vw;
+    top: 51.3vw;
     border-radius:.6vw;
 }
 
@@ -4059,7 +4104,7 @@ section.bolsa-icons-container > p {
     height: 6vw;
     position: absolute;
     left: 12vw;
-    top: 205vw;
+    top: 210.6vw;
     border-radius: 1vw;
 }
 
@@ -4072,7 +4117,7 @@ section.bolsa-icons-container > p {
     position: absolute;
     display: block;
     left: 12vw;
-    top: 218.7vw;
+    top: 224.2vw;
     border-radius: 1vw;
 }
 
@@ -4085,7 +4130,7 @@ section.bolsa-icons-container > p {
     position: absolute;
     display: block;
     left: 12vw;
-    top: 232.3vw;
+    top: 238.4vw;
     border-radius: 1vw;
 }
 
@@ -4118,6 +4163,7 @@ section.bolsa-icons-container > p {
     gap: 3vw;
     justify-content: center;
     margin: 4vw 0 6vw 0;
+    width: 95.5%;
 }
 
 .requirement-title {
